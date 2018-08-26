@@ -38,10 +38,7 @@ def topten(pos='',last=''):
 
 def fancylist(input_list):
     for i in range(len(input_list)):
-        if len(' '.join(input_list[i][:2])) -2 > 10:
-            tabs = 1
-        else: tabs = 2
-        print(str(i+1) + ' ' + ' '.join(input_list[i][1:-1]) + '\t'*tabs + input_list[i][-1])
+        print(' %-22s %s' % (str(i+1) + ' ' + ' '.join(input_list[i][1:-1]), input_list[i][-1]))
 
 
 def main():
@@ -49,10 +46,10 @@ def main():
     command = ''
     while not command == 'quit':
         print("\033c", end='')
-        print('===========================')
+        print('==========================')
         top = topten()
         fancylist(top)
-        print('===========================')
+        print('==========================')
         command = input("List number, player pos, or first three letters of last name \n^C to cancel any prompts\n> ").lower()
 
                 ############################## COMMAND PARSING #############################
