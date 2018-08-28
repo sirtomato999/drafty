@@ -8,7 +8,7 @@
 #            DEF   D
 #            FLEX  Real Position
 #
-# Draft 3.2.0 by Matthew Wozniak
+# Draft 3.8.0 by Matthew Wozniak
 #
 
 import pickle, time
@@ -34,10 +34,9 @@ def topten(pos='',last=''):
     else:
         return list[:10]
 
-
-def fancylist(input_list):
+def fancylist(input_list, rank=0):
     for i in range(len(input_list)):
-        print(' %-22s %s' % (str(i+1) + ' ' + ' '.join(input_list[i][1:-1]), input_list[i][-1]))
+        print(' %-22s %s' % ((str(i+1) if not rank else str(input_list[i][0])) + ' ' + ' '.join(input_list[i][1:-1]), input_list[i][-1]))
 
 
 def main():
@@ -53,7 +52,7 @@ def main():
   \__,_|_|  \__,_|_|  \__|\__, |
                            |___/ 
         """)
-        print("draft v3.1.0")
+        print("draft v3.8.0")
 
 
         print('==========================')
@@ -83,14 +82,13 @@ def main():
             last = topten(last=command)
 
             if len(last) == 0:
+                input("No such player! Press Enter to continue... ")
                 continue
             if len(last) == 1:
-                print("\033c", end='')
                 fancylist(last)
                 input('Hit enter to draft, ^C to cancel... ')
                 list.remove(last[0])
                 continue
-            print("\033c", end="")
             fancylist(last)
             number = between_one_and('List number: ', len(last))
             list.remove(last[int(number)])
@@ -102,6 +100,15 @@ def main():
             fancylist(pos)
             number = between_one_and('List number: ', len(pos))
             list.remove(pos[number-1])
+
+        if command.startswith('rank'):
+            command = command.split()
+            if not len(command) == 2:
+                input("Usage: rank <first 3 letters of player's last name>")
+                continue
+            ranks = topten(last=command[1])
+            fancylist(ranks, rank=1)
+            input('Press Enter... ')
 
 def between_one_and(prompt, limit):
     while 1:
