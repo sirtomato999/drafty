@@ -8,22 +8,10 @@
 #            DEF   D
 #            FLEX  Real Position
 #
-# Draft 3.1.0 by Matthew Wozniak
+# Draft 3.2.0 by Matthew Wozniak
 #
 
 import pickle, time
-
-print("\033c", end="")
-
-print("""
-     _            __ _         
-  __| |_ __ __ _ / _| |_ _   _ 
- / _` | '__/ _` | |_| __| | | |
-| (_| | | | (_| |  _| |_| |_| |
- \__,_|_|  \__,_|_|  \__|\__, |
-                         |___/ 
-""")
-print("draft v3.1.0")
 
 list = open('list', 'rb')
 list = pickle.load(list)
@@ -56,6 +44,18 @@ def main():
     global list
     command = ''
     while not command == 'quit':
+        print("\033c", end="")
+        print("""
+       _            __ _         
+    __| |_ __ __ _ / _| |_ _   _ 
+  / _` | '__/ _` | |_| __| | | |
+ | (_| | | | (_| |  _| |_| |_| |
+  \__,_|_|  \__,_|_|  \__|\__, |
+                           |___/ 
+        """)
+        print("draft v3.1.0")
+
+
         print('==========================')
         top = topten()
         fancylist(top)
@@ -72,11 +72,10 @@ def main():
                 temp = between_one_and('List number: ', len(top))
 
                 if temp == 0:
-                    print("\033c", end="")
                     continue
 
             list.remove(top[temp-1])
-            print("\033c", end="")
+
             continue
         except ValueError: pass
         if len(command) == 3:
@@ -95,7 +94,6 @@ def main():
             fancylist(last)
             number = between_one_and('List number: ', len(last))
             list.remove(last[int(number)])
-            print("\033c", end="")
         if len(command) == 2 or len(command) == 1:
             print("\033c", end="")
             print('POS: ' + command)
@@ -104,8 +102,6 @@ def main():
             fancylist(pos)
             number = between_one_and('List number: ', len(pos))
             list.remove(pos[number-1])
-            print("\033c", end="")
-
 
 def between_one_and(prompt, limit):
     while 1:
@@ -122,4 +118,4 @@ while 1:
     try:
         main()
         break
-    except: pass
+    except: print("\033c", end="")
