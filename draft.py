@@ -12,6 +12,9 @@
 #
 
 import pickle, time
+
+print("\033c", end="")
+
 print("""
      _            __ _         
   __| |_ __ __ _ / _| |_ _   _ 
