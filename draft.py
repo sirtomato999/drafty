@@ -8,7 +8,7 @@
 #            DEF   D
 #            FLEX  Real Position
 #
-# Draft 3.8.0 by Matthew Wozniak
+# Draft 3.9.0 by Matthew Wozniak
 #
 
 import pickle, time
@@ -35,16 +35,17 @@ def topten(pos='',last=''):
         return list[:10]
 
 def fancylist(input_list, rank=0):
+    print('\033[0;34m', end='')
     for i in range(len(input_list)):
         print(' %-22s %s' % ((str(i+1) if not rank else str(input_list[i][0])) + ' ' + ' '.join(input_list[i][1:-1]), input_list[i][-1]))
-
+    print('\033[0m', end='')
 
 def main():
     global list
     command = ''
     while not command == 'quit':
         print("\033c", end="")
-        print("""
+        print("""\033[0;32m
        _            __ _         
     __| |_ __ __ _ / _| |_ _   _ 
   / _` | '__/ _` | |_| __| | | |
@@ -52,14 +53,14 @@ def main():
   \__,_|_|  \__,_|_|  \__|\__, |
                            |___/ 
         """)
-        print("draft v3.8.0")
+        print("draft v3.9.0\033[0m")
 
 
-        print('==========================')
+        print('\033[0;34m==========================')
         top = topten()
         fancylist(top)
-        print('==========================')
-        command = input("List number, player pos, or first three letters of last name \n^C to cancel any prompts\n> ").lower()
+        print('\033[0;34m==========================\033[0m')
+        command = input("List number, player pos, or first three letters of last name \nUse rank the the first three letters of a players last name for their rank\n^C to cancel any prompts\n> ").lower()
 
                 ############################## COMMAND PARSING #############################
 
@@ -104,8 +105,8 @@ def main():
         if command.startswith('rank'):
             command = command.split()
             if not len(command) == 2:
-                input("Usage: rank <first 3 letters of player's last name>")
-                continue
+                input("Usage: rank <first 3 letters of player's last name>\nPress Enter...")
+                
             ranks = topten(last=command[1])
             fancylist(ranks, rank=1)
             input('Press Enter... ')
