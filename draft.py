@@ -1,17 +1,25 @@
 #
 # List: pickle file named list in same dir
-# Format: [[<rank: int>, <first name: str>, <last name: str>, <Jr, Sr, etc: str>, <position: str>]]
-# positions: WR    WR
-#            RB    RB
-#            TE    TE
-#            K     K
+# Format: [ [<rank: int>, <first name: str>, <last name: str>, <Jr, Sr, etc: str>, <position: str>] ]
+# positions: WR    -
+#            RB    -
+#            TE    -
+#            K     -
 #            DEF   D
 #            FLEX  Real Position
 #
-# Draft 3.9.0 by Matthew Wozniak
+# Draft 4.0.0 by Matthew Wozniak
 #
 
-import pickle, time
+# I need this to live
+true = True
+false = False
+
+import pickle, time, sys
+
+if sys.platform == 'win32': # colorama win32 stuff. osx and linux both have ansi-complient terminals.
+    import colorama         # stupid windows. we should all be using linux anyway
+    colorama.init()
 
 list = open('list', 'rb')
 list = pickle.load(list)
@@ -41,28 +49,68 @@ def fancylist(input_list, rank=0):
     print('\033[0m', end='')
 
 def main():
+
     global list
+    global overallpick
+    global pick
+    global round
+    global index
+
     command = ''
     while not command == 'quit':
         print("\033c", end="")
         print("""\033[0;32m
-       _            __ _         
-    __| |_ __ __ _ / _| |_ _   _ 
+       _            __ _
+    __| |_ __ __ _ / _| |_ _   _
   / _` | '__/ _` | |_| __| | | |
  | (_| | | | (_| |  _| |_| |_| |
   \__,_|_|  \__,_|_|  \__|\__, |
-                           |___/ 
+                           |___/
         """)
-        print("draft v3.9.0\033[0m")
+        print("draft v4.0.0\033[0m")
 
 
         print('\033[0;34m==========================')
         top = topten()
         fancylist(top)
         print('\033[0;34m==========================\033[0m')
+
+        ### CALCULATE PICK, ROUND, ETC. BASED ON OVERALL PICK
+
+
+        overallpick = overallpick + 1
+        round = (overallpick // teams) + 1
+
+        pick = ((overallpick - teams*round) + teams) + 1
+
+        isevenround = (overallpick // teams) % 2
+
+        if isevenround:
+            backwards = true
+        else:
+            backwards = false
+
+        if backwards:
+            index = abs((overallpick - teams*round))
+        else:
+            index = pick
+
+        if index == picknum:
+            addToTeam = True
+            print("\nYour turn!\n")
+
+            if team:
+                print('Your team: ')
+                fancylist(team)
+                print()
+
+        print('Overall pick: %i' % overallpick)
+        print("Round: %i\nPick: %i\nIndex: %i\n"  % (round, pick, index))
+
+
         command = input("List number, player pos, or first three letters of last name \nUse rank the the first three letters of a players last name for their rank\n^C to cancel any prompts\n> ").lower()
 
-                ############################## COMMAND PARSING #############################
+        ### PARSE COMMAND
 
         try:
             temp = int(command)
@@ -78,6 +126,7 @@ def main():
 
             continue
         except ValueError: pass
+
         if len(command) == 3:
             print('Last Name')
             last = topten(last=command)
@@ -89,10 +138,15 @@ def main():
                 fancylist(last)
                 input('Hit enter to draft, ^C to cancel... ')
                 list.remove(last[0])
+                if addToTeam:
+                    team.append(last[0])
+
                 continue
             fancylist(last)
             number = between_one_and('List number: ', len(last))
             list.remove(last[int(number)])
+            if addToTeam:
+                team.append(last[int(number)])
         if len(command) == 2 or len(command) == 1:
             print("\033c", end="")
             print('POS: ' + command)
@@ -101,12 +155,13 @@ def main():
             fancylist(pos)
             number = between_one_and('List number: ', len(pos))
             list.remove(pos[number-1])
-
+            if addToTeam:
+                team.append(pos[number-1])
         if command.startswith('rank'):
             command = command.split()
             if not len(command) == 2:
                 input("Usage: rank <first 3 letters of player's last name>\nPress Enter...")
-                
+
             ranks = topten(last=command[1])
             fancylist(ranks, rank=1)
             input('Press Enter... ')
@@ -122,8 +177,18 @@ def between_one_and(prompt, limit):
         except:
             print('A number between 1 and %i!' % limit)
     return int(command)
+
+team = []
+
+picknum = int(input('What number pick are you? '))
+teams = int(input('How many teams are there? '))
+
+overallpick = -1
+pick = 1
+round = 1
+
 while 1:
     try:
         main()
         break
-    except: print("\033c", end="")
+    except KeyboardInterrupt: print("\033c", end="")
