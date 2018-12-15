@@ -8,14 +8,14 @@
 #            DEF   D
 #            FLEX  Real Position
 #
-# Draft 4.0.0 by Matthew Wozniak
+# Draft 4.0.2 by Matthew Wozniak
 #
 
 # I need this to live
 true = True
 false = False
 
-import pickle, time, sys
+import pickle, time, sys, os
 
 if sys.platform == 'win32': # colorama win32 stuff. osx and linux both have ansi-complient terminals.
     import colorama         # stupid windows. we should all be using linux anyway
@@ -58,7 +58,10 @@ def main():
 
     command = ''
     while not command == 'quit':
-        print("\033c", end="")
+        if not sys.platform == 'win32':
+            print("\033c", end="")
+        else:
+            os.system('cls')
         print("""\033[0;32m
        _            __ _
     __| |_ __ __ _ / _| |_ _   _
@@ -67,7 +70,7 @@ def main():
   \__,_|_|  \__,_|_|  \__|\__, |
                            |___/
         """)
-        print("draft v4.0.0\033[0m")
+        print("draft v4.0.2\033[0m")
 
 
         print('\033[0;34m==========================')
@@ -95,12 +98,12 @@ def main():
         else:
             index = pick
 
+        addToTeam = false #resets
         if index == picknum:
             addToTeam = True
             print("\nYour turn!\n")
-
-            if team:
-                print('Your team: ')
+            if not team == []:
+                print('Team: ')
                 fancylist(team)
                 print()
 
@@ -123,7 +126,8 @@ def main():
                     continue
 
             list.remove(top[temp-1])
-
+            if addToTeam:
+                team.append(top[temp-1])
             continue
         except ValueError: pass
 
@@ -148,7 +152,10 @@ def main():
             if addToTeam:
                 team.append(last[int(number)])
         if len(command) == 2 or len(command) == 1:
-            print("\033c", end="")
+            if not sys.platform == 'win32':
+                print("\033c", end="")
+            else:
+                os.system('cls')
             print('POS: ' + command)
 
             pos = topten(pos=command)
@@ -187,8 +194,13 @@ overallpick = -1
 pick = 1
 round = 1
 
-while 1:
+while true:
     try:
         main()
         break
-    except KeyboardInterrupt: print("\033c", end="")
+    except KeyboardInterrupt:
+        if not sys.platform == 'win32':
+            print("\033c", end="")
+        else:
+            os.system('cls')
+        main()
