@@ -1,6 +1,6 @@
 #
 # List: pickle file named list in same dir
-# Format: [ [<rank: int>, <first name: str>, <last name: str>, <Jr, Sr, etc: str>, <position: str>] ]
+# Format: [ [<rank: int>, <first name: str>, <last name: str>, <Jr, Sr, etc: str>, <position: str>, <bye: int>] ]
 # positions: WR    -
 #            RB    -
 #            TE    -
@@ -8,7 +8,7 @@
 #            DEF   D
 #            FLEX  Real Position
 #
-# Draft 4.0.2 by Matthew Wozniak
+# Draft 4.1.3 by Matthew Wozniak
 #
 
 # I need this to live
@@ -30,7 +30,7 @@ def topten(pos='',last=''):
     if pos:
         temp = []
         for i in list:
-           if i[-1] == pos.upper():
+           if i[-2] == pos.upper():
                 temp.append(i)
         return temp[:10]
     elif last:
@@ -45,10 +45,11 @@ def topten(pos='',last=''):
 def fancylist(input_list, rank=0):
     print('\033[0;34m', end='')
     for i in range(len(input_list)):
-        print(' %-22s %s' % ((str(i+1) if not rank else str(input_list[i][0])) + ' ' + ' '.join(input_list[i][1:-1]), input_list[i][-1]))
+        print(' %-22s\t%i' % ((str(i+1) if not rank else str(input_list[i][0])) + ' ' + ' '.join(input_list[i][1:-2]), input_list[i][-1]))
+            # messiest thing ive ever written. god, i cant even read it
     print('\033[0m', end='')
 
-def main():
+def main(increment=True):
 
     global list
     global overallpick
@@ -70,7 +71,7 @@ def main():
   \__,_|_|  \__,_|_|  \__|\__, |
                            |___/
         """)
-        print("draft v4.0.2\033[0m")
+        print("draft v4.1.3\033[0m")
 
 
         print('\033[0;34m==========================')
@@ -80,32 +81,33 @@ def main():
 
         ### CALCULATE PICK, ROUND, ETC. BASED ON OVERALL PICK
 
+        if increment:
+            overallpick = overallpick + 1
 
-        overallpick = overallpick + 1
-        round = (overallpick // teams) + 1
+            round = (overallpick // teams) + 1
 
-        pick = ((overallpick - teams*round) + teams) + 1
+            pick = ((overallpick - teams*round) + teams) + 1
 
-        isevenround = (overallpick // teams) % 2
+            isevenround = (overallpick // teams) % 2
 
-        if isevenround:
-            backwards = true
-        else:
-            backwards = false
+            if isevenround:
+                backwards = true
+            else:
+                backwards = false
 
-        if backwards:
-            index = abs((overallpick - teams*round))
-        else:
-            index = pick
+            if backwards:
+                index = abs((overallpick - teams*round))
+            else:
+                index = pick
 
-        addToTeam = false #resets
-        if index == picknum:
-            addToTeam = True
-            print("\nYour turn!\n")
-            if not team == []:
-                print('Team: ')
-                fancylist(team)
-                print()
+            addToTeam = false #resets
+            if index == picknum:
+                addToTeam = True
+                print("\nYour turn!\n")
+                if not team == []:
+                    print('Team: ')
+                    fancylist(team)
+                    print()
 
         print('Overall pick: %i' % overallpick)
         print("Round: %i\nPick: %i\nIndex: %i\n"  % (round, pick, index))
@@ -172,6 +174,9 @@ def main():
             ranks = topten(last=command[1])
             fancylist(ranks, rank=1)
             input('Press Enter... ')
+            increment = False
+            continue
+        increment = True
 
 def between_one_and(prompt, limit):
     while 1:
@@ -187,7 +192,7 @@ def between_one_and(prompt, limit):
 
 team = []
 
-picknum = int(input('What number pick are you? '))
+picknum = int(input('What is your pick number? '))
 teams = int(input('How many teams are there? '))
 
 overallpick = -1
@@ -203,4 +208,4 @@ while true:
             print("\033c", end="")
         else:
             os.system('cls')
-        main()
+        main(increment=False)
