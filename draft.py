@@ -8,21 +8,21 @@
 #            DEF   D
 #            FLEX  Real Position
 #
-# Draft 4.1.3 by Matthew Wozniak
+# Draft 4.1.4 by Matthew Wozniak
 #
 
 # I need this to live
 true = True
 false = False
 
-import pickle, time, sys, os
+import json, time, sys, os
 
 if sys.platform == 'win32': # colorama win32 stuff. osx and linux both have ansi-complient terminals.
     import colorama         # stupid windows. we should all be using linux anyway
     colorama.init()
 
-list = open('list', 'rb')
-list = pickle.load(list)
+list = open('list', 'r')
+list = json.load(list)
 
 def topten(pos='',last=''):
     global list
@@ -44,9 +44,14 @@ def topten(pos='',last=''):
 
 def fancylist(input_list, rank=0):
     print('\033[0;34m', end='')
+    print('# Name                  Bye')
     for i in range(len(input_list)):
-        print(' %-22s\t%i' % ((str(i+1) if not rank else str(input_list[i][0])) + ' ' + ' '.join(input_list[i][1:-2]), input_list[i][-1]))
-            # messiest thing ive ever written. god, i cant even read it
+        name = ' '.join(input_list[i][1:-2])
+        bye  = input_list[i][-1]
+        if not rank:
+            print("%i %s-22s%i" % (i + 1, name, bye))
+        else:
+            print("%i %s-22s%i" % (str(input_list[i][0]), name, bye))
     print('\033[0m', end='')
 
 def main(increment=True):
@@ -71,13 +76,13 @@ def main(increment=True):
   \__,_|_|  \__,_|_|  \__|\__, |
                            |___/
         """)
-        print("draft v4.1.3\033[0m")
+        print("draft v4.1.4\033[0m")
 
 
-        print('\033[0;34m==========================')
+        print('\033[0;34m===========================')
         top = topten()
         fancylist(top)
-        print('\033[0;34m==========================\033[0m')
+        print('\033[0;34m===========================\033[0m')
 
         ### CALCULATE PICK, ROUND, ETC. BASED ON OVERALL PICK
 
@@ -109,8 +114,8 @@ def main(increment=True):
                     fancylist(team)
                     print()
 
-        print('Overall pick: %i' % overallpick)
-        print("Round: %i\nPick: %i\nIndex: %i\n"  % (round, pick, index))
+       # print('Overall pick: %i' % overallpick)
+       # print("Round: %i\nPick: %i\nIndex: %i\n"  % (round, pick, index))
 
 
         command = input("List number, player pos, or first three letters of last name \nUse rank the the first three letters of a players last name for their rank\n^C to cancel any prompts\n> ").lower()

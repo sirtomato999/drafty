@@ -11,7 +11,7 @@ except ImportError:
     import requests
     from bs4 import BeautifulSoup
 
-import pickle
+import json
 
 soup = BeautifulSoup(requests.get\
     ('https://www.fantasypros.com/nfl/rankings/ros-overall.php').text, 'lxml')
@@ -58,6 +58,7 @@ for row in rows:
         player = [rank,name0,pos,bye]
     list.append(player)
 
-f = open('list', 'wb')
-pickle.dump(list,f)
+f = open('list', 'w')
+list = json.dumps(list, indent=4, sort_keys=True)
+f.write(list)
 print('List dumped to file "list" in the current directory')
