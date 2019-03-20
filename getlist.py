@@ -1,3 +1,4 @@
+#!/usr/bin/python
 #
 # getlist.py downloads and parses a list from https://www.fantasypros.com
 #
@@ -5,17 +6,22 @@ print('Working...')
 try:
     from bs4 import BeautifulSoup
     import requests
+    import sys
+
 except ImportError:
     import reqs
     reqs.install()
     import requests
+    import sys
     from bs4 import BeautifulSoup
 
 import json
-
-soup = BeautifulSoup(requests.get\
-    ('https://www.fantasypros.com/nfl/rankings/ros-overall.php').text, 'lxml')
-
+if "--ppr" in sys.argv:
+    soup = BeautifulSoup(requests.get\
+        ('https://www.fantasypros.com/nfl/rankings/ros-ppr-overall.php').text, 'lxml')
+else:
+    soup = BeautifulSoup(requests.get\
+        ('https://www.fantasypros.com/nfl/rankings/ros-overall.php').text, 'lxml')
 table = soup.find_all('tbody')[0]
 rows = table.find_all('tr')
 list = []
@@ -36,8 +42,8 @@ for row in rows:
     elif pos == 'DS':
         pos = 'D'
         name = name[:-5]
-
-    bye = int(str(row_data[4])[4:6].strip('<'))
+    print(row_data[4])
+    bye = int(str(row_data[4])[3:5].strip('<')).lstrip('>')
 
     name0 = name.split()[0]
     try:

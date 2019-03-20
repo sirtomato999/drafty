@@ -1,3 +1,4 @@
+#!/usr/bin/python
 #
 # List: pickle file named list in same dir
 # Format: [ [<rank: int>, <first name: str>, <last name: str>, <Jr, Sr, etc: str>, <position: str>, <bye: int>] ]
@@ -44,14 +45,14 @@ def topten(pos='',last=''):
 
 def fancylist(input_list, rank=0):
     print('\033[0;34m', end='')
-    print('# Name                  Bye')
+    print('#  Name                   Bye')
     for i in range(len(input_list)):
         name = ' '.join(input_list[i][1:-2])
         bye  = input_list[i][-1]
         if not rank:
-            print("%i %s-22s%i" % (i + 1, name, bye))
+            print("%-2i %-22s %i" % (i + 1, name, bye))
         else:
-            print("%i %s-22s%i" % (str(input_list[i][0]), name, bye))
+            print("%-2i %-22s %i" % (str(input_list[i][0]), name, bye))
     print('\033[0m', end='')
 
 def main(increment=True):
@@ -63,7 +64,7 @@ def main(increment=True):
     global index
 
     command = ''
-    while not command == 'quit':
+    while True:
         if not sys.platform == 'win32':
             print("\033c", end="")
         else:
@@ -89,37 +90,40 @@ def main(increment=True):
         if increment:
             overallpick = overallpick + 1
 
-            round = (overallpick // teams) + 1
+        round = (overallpick // teams) + 1
 
-            pick = ((overallpick - teams*round) + teams) + 1
+        pick = ((overallpick - teams*round) + teams) + 1
 
-            isevenround = (overallpick // teams) % 2
+        isevenround = (overallpick // teams) % 2
 
-            if isevenround:
-                backwards = true
-            else:
-                backwards = false
+        if isevenround:
+            backwards = true
+        else:
+            backwards = false
 
-            if backwards:
-                index = abs((overallpick - teams*round))
-            else:
-                index = pick
+        if backwards:
+            index = abs((overallpick - teams*round))
+        else:
+            index = pick
 
-            addToTeam = false #resets
-            if index == picknum:
-                addToTeam = True
-                print("\nYour turn!\n")
-                if not team == []:
-                    print('Team: ')
-                    fancylist(team)
-                    print()
+        addToTeam = false #resets
+        if index == picknum:
+            addToTeam = True
+            print("\nYour turn!\n")
+            if not team == []:
+                print('Team: ')
+                fancylist(team)
+                print()
 
        # print('Overall pick: %i' % overallpick)
        # print("Round: %i\nPick: %i\nIndex: %i\n"  % (round, pick, index))
 
 
         command = input("List number, player pos, or first three letters of last name \nUse rank the the first three letters of a players last name for their rank\n^C to cancel any prompts\n> ").lower()
-
+        if not command:
+            main(increment=False)
+        if command == 'quit':
+           sys.exit()
         ### PARSE COMMAND
 
         try:
@@ -200,17 +204,16 @@ team = []
 picknum = int(input('What is your pick number? '))
 teams = int(input('How many teams are there? '))
 
-overallpick = -1
+overallpick = 0
 pick = 1
 round = 1
 
 while true:
     try:
-        main()
+        main(increment=False)
         break
     except KeyboardInterrupt:
         if not sys.platform == 'win32':
             print("\033c", end="")
         else:
             os.system('cls')
-        main(increment=False)
