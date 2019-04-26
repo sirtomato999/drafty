@@ -12,11 +12,8 @@
 # Draft 4.1.4 by Matthew Wozniak
 #
 
-# I need this to live
-true = True
-false = False
-
 import json, time, sys, os
+from pickhelper import pick
 
 if sys.platform == 'win32': # colorama win32 stuff. osx and linux both have ansi-complient terminals.
     import colorama         # stupid windows. we should all be using linux anyway
@@ -24,6 +21,21 @@ if sys.platform == 'win32': # colorama win32 stuff. osx and linux both have ansi
 
 list = open('list', 'r')
 list = json.load(list)
+
+if '-t' in sys.argv:
+    print(pick(list[5:], list[:5]))
+    sys.exit()
+def between_one_and(prompt, limit):
+    while 1:
+        command = input(prompt)
+        try:
+            command = int(command)
+            if command > limit or command < 0:
+                raise ValueError
+            return int(command)
+        except:
+            print('A number between 1 and %i!' % limit)
+    return int(command)
 
 def topten(pos='',last=''):
     global list
@@ -45,14 +57,17 @@ def topten(pos='',last=''):
 
 def fancylist(input_list, rank=0):
     print('\033[0;34m', end='')
-    print('#  Name                   Bye')
+    print('#  Name                   Pos Bye')
     for i in range(len(input_list)):
         name = ' '.join(input_list[i][1:-2])
+        pos = input_list[i][-2]
         bye  = input_list[i][-1]
+        if bye == -1:
+            bye = '-'
         if not rank:
-            print("%-2i %-22s %i" % (i + 1, name, bye))
+            print("%-2i %-22s %-3s " % (i + 1, name, pos) + str(bye))
         else:
-            print("%-2i %-22s %i" % (str(input_list[i][0]), name, bye))
+            print("%-2i %-22s %-3s " % (str(input_list[i][0]), name, pos) + str(bye))
     print('\033[0m', end='')
 
 def main(increment=True):
@@ -62,14 +77,14 @@ def main(increment=True):
     global pick
     global round
     global index
-
     command = ''
     while True:
         if not sys.platform == 'win32':
             print("\033c", end="")
         else:
             os.system('cls')
-        print("""\033[0;32m
+        if not '--no-figlet' in sys.argv:
+        	print("""\033[0;32m
        _            __ _
     __| |_ __ __ _ / _| |_ _   _
   / _` | '__/ _` | |_| __| | | |
@@ -77,13 +92,11 @@ def main(increment=True):
   \__,_|_|  \__,_|_|  \__|\__, |
                            |___/
         """)
-        print("draft v4.1.4\033[0m")
-
-
-        print('\033[0;34m===========================')
+        print("\033[0;32mdraft v4.1.4\033[0m")
+        print('\033[0;34m=================================')
         top = topten()
         fancylist(top)
-        print('\033[0;34m===========================\033[0m')
+        print('\033[0;34m=================================\033[0m')
 
         ### CALCULATE PICK, ROUND, ETC. BASED ON OVERALL PICK
 
@@ -97,16 +110,18 @@ def main(increment=True):
         isevenround = (overallpick // teams) % 2
 
         if isevenround:
-            backwards = true
+            backwards = True
         else:
-            backwards = false
+            backwards = False
 
         if backwards:
             index = abs((overallpick - teams*round))
         else:
             index = pick
 
-        addToTeam = false #resets
+        increment = True        
+
+        addToTeam = False #resets
         if index == picknum:
             addToTeam = True
             print("\nYour turn!\n")
@@ -119,22 +134,22 @@ def main(increment=True):
        # print("Round: %i\nPick: %i\nIndex: %i\n"  % (round, pick, index))
 
 
-        command = input("List number, player pos, or first three letters of last name \nUse rank the the first three letters of a players last name for their rank\n^C to cancel any prompts\n> ").lower()
+        command = input("Type ? for help\n> ").lower()
         if not command:
-            main(increment=False)
+            increment = False
+            continue
         if command == 'quit':
-           sys.exit()
+            sys.exit()
         ### PARSE COMMAND
 
-        try:
-            temp = int(command)
-            if temp > 10 or temp < 1:
 
+        try:
+            if command == '?': raise ValueError
+            temp = int(command)
+
+            if temp > 10 or temp < 1:
                 print('Between one and ten!')
                 temp = between_one_and('List number: ', len(top))
-
-                if temp == 0:
-                    continue
 
             list.remove(top[temp-1])
             if addToTeam:
@@ -142,6 +157,18 @@ def main(increment=True):
             continue
         except ValueError: pass
 
+
+        if command == '?':
+            input("""
+?		Show this help message
+r <last>	Show the overall rank of a player (first three letters)
+b <bye>		Search by byeweek
+<last>		Search for the player with that last name (first three letters)
+<top ten rank>	Draft top ten player
+<position>	Shows top ten players from that position\n\n\nPress Enter to continue""")
+            continue
+     
+        # last name
         if len(command) == 3:
             print('Last Name')
             last = topten(last=command)
@@ -159,9 +186,11 @@ def main(increment=True):
                 continue
             fancylist(last)
             number = between_one_and('List number: ', len(last))
-            list.remove(last[int(number)])
+            list.remove(last[int(number)-1])
             if addToTeam:
-                team.append(last[int(number)])
+                team.append(last[int(number)-1])
+
+        #posistion
         if len(command) == 2 or len(command) == 1:
             if not sys.platform == 'win32':
                 print("\033c", end="")
@@ -175,29 +204,32 @@ def main(increment=True):
             list.remove(pos[number-1])
             if addToTeam:
                 team.append(pos[number-1])
-        if command.startswith('rank'):
+
+        # rank
+        if command.startswith('r'):
             command = command.split()
             if not len(command) == 2:
-                input("Usage: rank <first 3 letters of player's last name>\nPress Enter...")
+                input("Usage: r <first 3 letters of player's last name>\nPress Enter...")
 
             ranks = topten(last=command[1])
             fancylist(ranks, rank=1)
             input('Press Enter... ')
-            increment = False
-            continue
-        increment = True
 
-def between_one_and(prompt, limit):
-    while 1:
-        command = input(prompt)
-        try:
-            command = int(command)
-            if command > limit or command < 0:
-                raise ValueError
-            return int(command)
-        except:
-            print('A number between 1 and %i!' % limit)
-    return int(command)
+        #byeweek
+        if command.startswith('b'):
+            bye = command.lstrip('b')
+            bye = bye.lstrip(' ')
+            byelist = []
+            try:
+                for player in players:
+                    if player[-1] == int(bye):
+                        byelist.append(player)
+            except:
+                input('a bye is only a number\nPress Enter...')
+                continue
+            fancylist(byelist)
+            number = between_one_and('List number: ', len(byelist))
+            list.remove(byelist[number-1])
 
 team = []
 
@@ -208,7 +240,7 @@ overallpick = 0
 pick = 1
 round = 1
 
-while true:
+while True:
     try:
         main(increment=False)
         break

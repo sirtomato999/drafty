@@ -42,9 +42,10 @@ for row in rows:
     elif pos == 'DS':
         pos = 'D'
         name = name[:-5]
-    print(row_data[4])
-    bye = int(str(row_data[4])[3:5].strip('<')).lstrip('>')
-
+    try:
+        bye = int(str(row_data[4]).strip('</td>').lstrip('<td>'))
+    except ValueError:
+        bye = -1
     name0 = name.split()[0]
     try:
         name1 = name.split()[1]
@@ -63,6 +64,10 @@ for row in rows:
     else:
         player = [rank,name0,pos,bye]
     list.append(player)
+    
+    for i in player:
+        print(i, end=' ')
+    print()
 
 f = open('list', 'w')
 list = json.dumps(list, indent=4, sort_keys=True)
