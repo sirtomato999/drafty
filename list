@@ -4,686 +4,784 @@
         "Ezekiel",
         "Elliott",
         "RB",
-        8
+        8,
+        "DAL"
     ],
     [
         2,
         "Christian",
         "McCaffrey",
         "RB",
-        4
+        4,
+        "CAR"
     ],
     [
         3,
         "Saquon",
         "Barkley",
         "RB",
-        9
+        9,
+        "NYG"
     ],
     [
         4,
         "Nick",
         "Chubb",
         "RB",
-        11
+        11,
+        "CLE"
     ],
     [
         5,
         "DeAndre",
         "Hopkins",
         "WR",
-        10
+        10,
+        "HOU"
     ],
     [
         6,
         "Julio",
         "Jones",
         "WR",
-        8
+        8,
+        "ATL"
     ],
     [
         7,
         "Davante",
         "Adams",
         "WR",
-        7
+        7,
+        "GB"
     ],
     [
         8,
         "Alvin",
         "Kamara",
         "RB",
-        6
+        6,
+        "NO"
     ],
     [
         9,
         "Antonio",
         "Brown",
         "WR",
-        7
+        7,
+        "OAK"
     ],
     [
         10,
         "Michael",
         "Thomas",
         "WR",
-        6
+        6,
+        "NO"
     ],
     [
         11,
         "Todd",
         "Gurley",
         "RB",
-        12
+        12,
+        "LAR"
     ],
     [
         12,
         "Joe",
         "Mixon",
         "RB",
-        9
+        9,
+        "CIN"
     ],
     [
         13,
         "Tyreek",
         "Hill",
         "WR",
-        12
+        12,
+        "KC"
     ],
     [
         14,
         "Dalvin",
         "Cook",
         "RB",
-        10
+        10,
+        "MIN"
     ],
     [
         15,
         "Melvin",
         "Gordon",
         "RB",
-        8
+        8,
+        "LAC"
     ],
     [
         16,
         "JuJu",
         "Smith-Schuster",
         "WR",
-        7
+        7,
+        "PIT"
     ],
     [
         17,
         "Amari",
         "Cooper",
         "WR",
-        8
+        8,
+        "DAL"
     ],
     [
         18,
         "Adam",
         "Thielen",
         "WR",
-        10
+        10,
+        "MIN"
     ],
     [
         19,
         "Travis",
         "Kelce",
         "TE",
-        12
+        12,
+        "KC"
     ],
     [
         20,
         "Robert",
         "Woods",
         "WR",
-        12
+        12,
+        "LAR"
     ],
     [
         21,
         "Stefon",
         "Diggs",
         "WR",
-        10
+        10,
+        "MIN"
     ],
     [
         22,
         "Chris",
         "Carson",
         "RB",
-        7
+        7,
+        "SEA"
     ],
     [
         23,
         "Marlon",
         "Mack",
         "RB",
-        9
+        9,
+        "IND"
     ],
     [
         24,
         "Keenan",
         "Allen",
         "WR",
-        8
+        8,
+        "LAC"
     ],
     [
         25,
         "Derrick",
         "Henry",
         "RB",
-        8
+        8,
+        "TEN"
     ],
     [
         26,
         "Phillip",
         "Lindsay",
         "RB",
-        10
+        10,
+        "DEN"
     ],
     [
         27,
         "T.Y.",
         "Hilton",
         "WR",
-        9
+        9,
+        "IND"
     ],
     [
         28,
         "Mike",
         "Evans",
         "WR",
-        5
+        5,
+        "TB"
     ],
     [
         29,
         "Patrick",
         "Mahomes",
         "QB",
-        12
+        12,
+        "KC"
     ],
     [
         30,
         "George",
         "Kittle",
         "TE",
-        11
+        11,
+        "SF"
     ],
     [
         31,
         "Julian",
         "Edelman",
         "WR",
-        11
+        11,
+        "NE"
     ],
     [
         32,
         "Sony",
         "Michel",
         "RB",
-        11
+        11,
+        "NE"
     ],
     [
         33,
         "Kenny",
         "Golladay",
         "WR",
-        6
+        6,
+        "DET"
     ],
     [
         34,
         "Brandin",
         "Cooks",
         "WR",
-        12
+        12,
+        "LAR"
     ],
     [
         35,
         "Leonard",
         "Fournette",
         "RB",
-        9
+        9,
+        "JAC"
     ],
     [
         36,
         "David",
         "Johnson",
         "RB",
-        9
+        9,
+        "ARI"
     ],
     [
         37,
         "Jamaal",
         "Williams",
         "RB",
-        7
+        7,
+        "GB"
     ],
     [
         38,
         "Zach",
         "Ertz",
         "TE",
-        9
+        9,
+        "PHI"
     ],
     [
         39,
         "Ben",
         "Roethlisberger",
         "QB",
-        7
+        7,
+        "PIT"
     ],
     [
         40,
         "Andrew",
         "Luck",
         "QB",
-        9
+        9,
+        "IND"
     ],
     [
         41,
         "Tyler",
         "Lockett",
         "WR",
-        7
+        7,
+        "SEA"
     ],
     [
         42,
         "Eric",
         "Ebron",
         "TE",
-        9
+        9,
+        "IND"
     ],
     [
         43,
         "Mark",
         "Ingram",
         "RB",
-        10
+        10,
+        "BAL"
     ],
     [
         44,
         "Jarvis",
         "Landry",
         "WR",
-        11
+        11,
+        "CLE"
     ],
     [
         45,
         "Damien",
         "Williams",
         "RB",
-        12
+        12,
+        "KC"
     ],
     [
         46,
         "Alshon",
         "Jeffery",
         "WR",
-        9
+        9,
+        "PHI"
     ],
     [
         47,
         "Tarik",
         "Cohen",
         "RB",
-        5
+        5,
+        "CHI"
     ],
     [
         48,
         "James",
         "Conner",
         "RB",
-        7
+        7,
+        "PIT"
     ],
     [
         49,
         "Drew",
         "Brees",
         "QB",
-        6
+        6,
+        "NO"
     ],
     [
         50,
         "Corey",
         "Davis",
         "WR",
-        8
+        8,
+        "TEN"
     ],
     [
         51,
         "Aaron",
         "Rodgers",
         "QB",
-        7
+        7,
+        "GB"
     ],
     [
         52,
         "Russell",
         "Wilson",
         "QB",
-        7
+        7,
+        "SEA"
     ],
     [
         53,
         "Allen",
         "Robinson",
         "WR",
-        5
+        5,
+        "CHI"
     ],
     [
         54,
         "Elijah",
         "McGuire",
         "RB",
-        11
+        11,
+        "NYJ"
     ],
     [
         55,
         "Tevin",
         "Coleman",
         "RB",
-        11
+        11,
+        "SF"
     ],
     [
         56,
         "Doug",
         "Baldwin",
         "WR",
-        7
+        -1,
+        -1
     ],
     [
         57,
         "Gus",
         "Edwards",
         "RB",
-        10
+        10,
+        "BAL"
     ],
     [
         58,
         "Matt",
         "Ryan",
         "QB",
-        8
+        8,
+        "ATL"
     ],
     [
         59,
         "D.J.",
         "Moore",
         "WR",
-        4
+        4,
+        "CAR"
     ],
     [
         60,
         "Mike",
         "Williams",
         "WR",
-        8
+        8,
+        "LAC"
     ],
     [
         61,
         "Robby",
         "Anderson",
         "WR",
-        11
+        11,
+        "NYJ"
     ],
     [
         62,
         "Lamar",
         "Miller",
         "RB",
-        10
+        10,
+        "HOU"
     ],
     [
         63,
         "Chris",
         "Godwin",
         "WR",
-        5
+        5,
+        "TB"
     ],
     [
         64,
         "Adrian",
         "Peterson",
         "RB",
-        4
+        4,
+        "WAS"
     ],
     [
         65,
         "Kenyan",
         "Drake",
         "RB",
-        11
+        11,
+        "MIA"
     ],
     [
         66,
         "Mitch",
         "Trubisky",
         "QB",
-        5
+        5,
+        "CHI"
     ],
     [
         67,
         "Larry",
         "Fitzgerald",
         "WR",
-        9
+        9,
+        "ARI"
     ],
     [
         68,
         "Adam",
         "Humphries",
         "WR",
-        8
+        8,
+        "TEN"
     ],
     [
         69,
         "Deshaun",
         "Watson",
         "QB",
-        10
+        10,
+        "HOU"
     ],
     [
         70,
         "Courtland",
         "Sutton",
         "WR",
-        10
+        10,
+        "DEN"
     ],
     [
         71,
         "Jordan",
         "Howard",
         "RB",
-        5
+        9,
+        "PHI"
     ],
     [
         72,
         "Calvin",
         "Ridley",
         "WR",
-        8
+        8,
+        "ATL"
     ],
     [
         73,
         "Jameis",
         "Winston",
         "QB",
-        5
+        5,
+        "TB"
     ],
     [
         74,
         "James",
         "White",
         "RB",
-        11
+        11,
+        "NE"
     ],
     [
         75,
         "Spencer",
         "Ware",
         "RB",
-        -1
+        9,
+        "IND"
     ],
     [
         76,
         "Josh",
         "Adams",
         "RB",
-        9
+        9,
+        "PHI"
     ],
     [
         77,
         "Dak",
         "Prescott",
         "QB",
-        8
+        8,
+        "DAL"
     ],
     [
         78,
         "Josh",
         "Reynolds",
         "WR",
-        12
+        12,
+        "LAR"
     ],
     [
         79,
         "Philip",
         "Rivers",
         "QB",
-        8
+        8,
+        "LAC"
     ],
     [
         80,
         "Jared",
         "Goff",
         "QB",
-        12
+        12,
+        "LAR"
     ],
     [
         81,
         "Baker",
         "Mayfield",
         "QB",
-        11
+        11,
+        "CLE"
     ],
     [
         82,
         "Kirk",
         "Cousins",
         "QB",
-        10
+        10,
+        "MIN"
     ],
     [
         83,
         "Jeff",
         "Wilson",
         "RB",
-        11
+        11,
+        "SF"
     ],
     [
         84,
         "Curtis",
         "Samuel",
         "WR",
-        4
+        4,
+        "CAR"
     ],
     [
         85,
         "Josh",
         "Allen",
         "QB",
-        11
+        11,
+        "BUF"
     ],
     [
         86,
         "Dion",
         "Lewis",
         "RB",
-        8
+        8,
+        "TEN"
     ],
     [
         87,
         "Lamar",
         "Jackson",
         "QB",
-        10
+        10,
+        "BAL"
     ],
     [
         88,
         "Peyton",
         "Barber",
         "RB",
-        -1
+        5,
+        "TB"
     ],
     [
         89,
         "LeSean",
         "McCoy",
         "RB",
-        11
+        11,
+        "BUF"
     ],
     [
         90,
         "Dede",
         "Westbrook",
         "WR",
-        9
+        9,
+        "JAC"
     ],
     [
         91,
         "Golden",
         "Tate",
         "WR",
-        9
+        9,
+        "NYG"
     ],
     [
         92,
         "Tom",
         "Brady",
         "QB",
-        11
+        11,
+        "NE"
     ],
     [
         93,
         "Kenneth",
         "Dixon",
         "RB",
-        10
+        10,
+        "BAL"
     ],
     [
         94,
         "Doug",
         "Martin",
         "RB",
-        -1
+        7,
+        "OAK"
     ],
     [
         95,
         "Jaylen",
         "Samuels",
         "RB",
-        7
+        7,
+        "PIT"
     ],
     [
         96,
         "Randall",
         "Cobb",
         "WR",
-        8
+        8,
+        "DAL"
     ],
     [
         97,
         "Kalen",
         "Ballage",
         "RB",
-        11
+        11,
+        "MIA"
     ],
     [
         98,
         "Robert",
         "Foster",
         "WR",
-        11
+        11,
+        "BUF"
     ],
     [
         99,
@@ -696,13 +794,15 @@
         "Mohamed",
         "Sanu",
         "WR",
-        8
+        8,
+        "ATL"
     ],
     [
         101,
         "Jordy",
         "Nelson",
         "WR",
+        -1,
         -1
     ],
     [
@@ -710,35 +810,40 @@
         "Sam",
         "Darnold",
         "QB",
-        11
+        11,
+        "NYJ"
     ],
     [
         103,
         "Sterling",
         "Shepard",
         "WR",
-        9
+        9,
+        "NYG"
     ],
     [
         104,
         "Nick",
         "Foles",
         "QB",
-        9
+        9,
+        "JAC"
     ],
     [
         105,
         "Taylor",
         "Gabriel",
         "WR",
-        5
+        5,
+        "CHI"
     ],
     [
         106,
         "Alfred",
         "Blue",
         "RB",
-        -1
+        9,
+        "JAC"
     ],
     [
         107,
@@ -751,35 +856,40 @@
         "Theo",
         "Riddick",
         "RB",
-        6
+        10,
+        "DEN"
     ],
     [
         109,
         "Jalen",
         "Richard",
         "RB",
-        -1
+        7,
+        "OAK"
     ],
     [
         110,
         "Austin",
         "Ekeler",
         "RB",
-        8
+        8,
+        "LAC"
     ],
     [
         111,
         "David",
         "Moore",
         "WR",
-        7
+        7,
+        "SEA"
     ],
     [
         112,
         "Derek",
         "Carr",
         "QB",
-        7
+        7,
+        "OAK"
     ],
     [
         113,
@@ -804,14 +914,16 @@
         "Los",
         "Angeles",
         "D",
-        8
+        8,
+        -1
     ],
     [
         117,
         "Anthony",
         "Miller",
         "WR",
-        5
+        5,
+        "CHI"
     ],
     [
         118,
@@ -824,49 +936,56 @@
         "Kenny",
         "Stills",
         "WR",
-        11
+        11,
+        "MIA"
     ],
     [
         120,
         "John",
         "Kelly",
         "RB",
-        12
+        12,
+        "LAR"
     ],
     [
         121,
         "Nick",
         "Mullens",
         "QB",
-        11
+        11,
+        "SF"
     ],
     [
         122,
         "John",
         "Ross",
         "WR",
-        9
+        9,
+        "CIN"
     ],
     [
         123,
         "Rex",
         "Burkhead",
         "RB",
-        11
+        11,
+        "NE"
     ],
     [
         124,
         "Tre'Quan",
         "Smith",
         "WR",
-        6
+        6,
+        "NO"
     ],
     [
         125,
         "Greg",
         "Zuerlein",
         "K",
-        12
+        12,
+        "LAR"
     ],
     [
         126,
@@ -879,77 +998,88 @@
         "Los",
         "Angeles",
         "D",
-        12
+        12,
+        -1
     ],
     [
         128,
         "Eli",
         "Manning",
         "QB",
-        9
+        9,
+        "NYG"
     ],
     [
         129,
         "Chris",
         "Conley",
         "WR",
-        9
+        9,
+        "JAC"
     ],
     [
         130,
         "Royce",
         "Freeman",
         "RB",
-        10
+        10,
+        "DEN"
     ],
     [
         131,
         "Stephen",
         "Gostkowski",
         "K",
-        -1
+        11,
+        "NE"
     ],
     [
         132,
         "C.J.",
         "Anderson",
         "RB",
-        12
+        6,
+        "DET"
     ],
     [
         133,
         "Willie",
         "Snead",
         "WR",
-        10
+        10,
+        "BAL"
     ],
     [
         134,
         "Matthew",
         "Stafford",
         "QB",
-        6
+        6,
+        "DET"
     ],
     [
         135,
         "Keke",
         "Coutee",
         "WR",
-        10
+        10,
+        "HOU"
     ],
     [
         136,
         "Justin",
         "Tucker",
         "K",
-        10
+        10,
+        "BAL"
     ],
     [
         137,
         "Jared",
         "Cook",
         "TE",
-        -1
+        6,
+        "NO"
     ],
     [
         138,
@@ -962,34 +1092,39 @@
         "Michael",
         "Gallup",
         "WR",
-        8
+        8,
+        "DAL"
     ],
     [
         140,
         "Latavius",
         "Murray",
         "RB",
-        6
+        6,
+        "NO"
     ],
     [
         141,
         "Harrison",
         "Butker",
         "K",
-        12
+        12,
+        "KC"
     ],
     [
         142,
         "Josh",
         "Doctson",
         "WR",
-        4
+        4,
+        "WAS"
     ],
     [
         143,
         "LeGarrette",
         "Blount",
         "RB",
+        -1,
         -1
     ],
     [
@@ -997,7 +1132,8 @@
         "Antonio",
         "Callaway",
         "WR",
-        11
+        11,
+        "CLE"
     ],
     [
         145,
@@ -1010,20 +1146,23 @@
         "John",
         "Brown",
         "WR",
-        11
+        11,
+        "BUF"
     ],
     [
         147,
         "Nyheim",
         "Hines",
         "RB",
-        9
+        9,
+        "IND"
     ],
     [
         148,
         "Michael",
         "Crabtree",
         "WR",
+        -1,
         -1
     ],
     [
@@ -1037,34 +1176,39 @@
         "Ka'imi",
         "Fairbairn",
         "K",
-        -1
+        10,
+        "HOU"
     ],
     [
         151,
         "Duke",
         "Johnson",
         "RB",
-        11
+        10,
+        "HOU"
     ],
     [
         152,
         "Zay",
         "Jones",
         "WR",
-        11
+        11,
+        "BUF"
     ],
     [
         153,
         "Tyrell",
         "Williams",
         "WR",
-        7
+        7,
+        "OAK"
     ],
     [
         154,
         "Matt",
         "Bryant",
         "K",
+        -1,
         -1
     ],
     [
@@ -1072,7 +1216,8 @@
         "Wil",
         "Lutz",
         "K",
-        6
+        6,
+        "NO"
     ],
     [
         156,
@@ -1085,14 +1230,16 @@
         "DaeSean",
         "Hamilton",
         "WR",
-        10
+        10,
+        "DEN"
     ],
     [
         158,
         "Matt",
         "Prater",
         "K",
-        6
+        6,
+        "DET"
     ],
     [
         159,
@@ -1105,105 +1252,120 @@
         "Dan",
         "Bailey",
         "K",
-        10
+        10,
+        "MIN"
     ],
     [
         161,
         "Jake",
         "Elliott",
         "K",
-        9
+        9,
+        "PHI"
     ],
     [
         162,
         "Case",
         "Keenum",
         "QB",
-        4
+        4,
+        "WAS"
     ],
     [
         163,
         "Marcus",
         "Mariota",
         "QB",
-        8
+        8,
+        "TEN"
     ],
     [
         164,
         "Donte",
         "Moncrief",
         "WR",
-        7
+        7,
+        "PIT"
     ],
     [
         165,
         "Jamison",
         "Crowder",
         "WR",
-        11
+        11,
+        "NYJ"
     ],
     [
         166,
         "Zach",
         "Zenner",
         "RB",
-        6
+        6,
+        "DET"
     ],
     [
         167,
         "Taywan",
         "Taylor",
         "WR",
-        8
+        8,
+        "TEN"
     ],
     [
         168,
         "Rob",
         "Gronkowski",
         "TE",
-        11
+        -1,
+        -1
     ],
     [
         169,
         "Evan",
         "Engram",
         "TE",
-        9
+        9,
+        "NYG"
     ],
     [
         170,
         "Cameron",
         "Brate",
         "TE",
-        5
+        5,
+        "TB"
     ],
     [
         171,
         "Josh",
         "Johnson",
         "QB",
-        -1
+        6,
+        "DET"
     ],
     [
         172,
         "Devin",
         "Funchess",
         "WR",
-        9
+        9,
+        "IND"
     ],
     [
         173,
         "Chris",
         "Thompson",
         "RB",
-        4
+        4,
+        "WAS"
     ],
     [
         174,
         "Mason",
         "Crosby",
         "K",
-        7
+        7,
+        "GB"
     ],
     [
         175,
@@ -1216,7 +1378,8 @@
         "Michael",
         "Badgley",
         "K",
-        8
+        8,
+        "LAC"
     ],
     [
         177,
@@ -1229,21 +1392,24 @@
         "Isaiah",
         "McKenzie",
         "WR",
-        11
+        11,
+        "BUF"
     ],
     [
         179,
         "Sammy",
         "Watkins",
         "WR",
-        12
+        12,
+        "KC"
     ],
     [
         180,
         "Rashaad",
         "Penny",
         "RB",
-        7
+        7,
+        "SEA"
     ],
     [
         181,
@@ -1256,21 +1422,24 @@
         "Darren",
         "Sproles",
         "RB",
-        -1
+        9,
+        "PHI"
     ],
     [
         183,
         "Kansas",
         "City",
         "D",
-        12
+        12,
+        -1
     ],
     [
         184,
         "DeSean",
         "Jackson",
         "WR",
-        9
+        9,
+        "PHI"
     ],
     [
         185,
@@ -1283,70 +1452,80 @@
         "Tyler",
         "Boyd",
         "WR",
-        9
+        9,
+        "CIN"
     ],
     [
         187,
         "David",
         "Njoku",
         "TE",
-        11
+        11,
+        "CLE"
     ],
     [
         188,
         "Bruce",
         "Ellington",
         "WR",
-        11
+        -1,
+        -1
     ],
     [
         189,
         "New",
         "Orleans",
         "D",
-        6
+        6,
+        -1
     ],
     [
         190,
         "Danny",
         "Amendola",
         "WR",
-        6
+        6,
+        "DET"
     ],
     [
         191,
         "Alex",
         "Erickson",
         "WR",
-        9
+        9,
+        "CIN"
     ],
     [
         192,
         "Ryan",
         "Succop",
         "K",
-        8
+        8,
+        "TEN"
     ],
     [
         193,
         "Brett",
         "Maher",
         "K",
-        8
+        8,
+        "DAL"
     ],
     [
         194,
         "Chris",
         "Hogan",
         "WR",
-        -1
+        4,
+        "CAR"
     ],
     [
         195,
         "Devante",
         "Parker",
         "WR",
-        11
+        11,
+        "MIA"
     ],
     [
         196,
@@ -1359,21 +1538,24 @@
         "Marquise",
         "Goodwin",
         "WR",
-        11
+        11,
+        "SF"
     ],
     [
         198,
         "Trent",
         "Sherfield",
         "WR",
-        9
+        9,
+        "ARI"
     ],
     [
         199,
         "Wendell",
         "Smallwood",
         "RB",
-        9
+        9,
+        "PHI"
     ],
     [
         200,
@@ -1381,34 +1563,39 @@
         "St.",
         "Brown",
         "WR",
-        7
+        7,
+        "GB"
     ],
     [
         201,
         "D'Onta",
         "Foreman",
         "RB",
-        10
+        9,
+        "IND"
     ],
     [
         202,
         "Josh",
         "Lambo",
         "K",
-        9
+        9,
+        "JAC"
     ],
     [
         203,
         "Adam",
         "Vinatieri",
         "K",
-        9
+        9,
+        "IND"
     ],
     [
         204,
         "Cody",
         "Parkey",
         "K",
+        -1,
         -1
     ],
     [
@@ -1416,69 +1603,79 @@
         "Marcell",
         "Ateman",
         "WR",
-        7
+        7,
+        "OAK"
     ],
     [
         206,
         "Robbie",
         "Gould",
         "K",
-        11
+        11,
+        "SF"
     ],
     [
         207,
         "Ryan",
         "Tannehill",
         "QB",
-        8
+        8,
+        "TEN"
     ],
     [
         208,
         "Jaron",
         "Brown",
         "WR",
-        7
+        7,
+        "SEA"
     ],
     [
         209,
         "New",
         "England",
         "D",
-        11
+        11,
+        -1
     ],
     [
         210,
         "Green",
         "Bay",
         "D",
-        7
+        7,
+        -1
     ],
     [
         211,
         "Mike",
         "Davis",
         "RB",
-        5
+        5,
+        "CHI"
     ],
     [
         212,
         "Dontrelle",
         "Inman",
         "WR",
-        -1
+        11,
+        "NE"
     ],
     [
         213,
         "Rashard",
         "Higgins",
         "WR",
-        -1
+        11,
+        "CLE"
     ],
     [
         214,
         "Kelvin",
         "Benjamin",
         "WR",
+        -1,
         -1
     ],
     [
@@ -1486,35 +1683,40 @@
         "Tim",
         "Patrick",
         "WR",
-        10
+        10,
+        "DEN"
     ],
     [
         216,
         "Nelson",
         "Agholor",
         "WR",
-        9
+        9,
+        "PHI"
     ],
     [
         217,
         "C.J.",
         "Uzomah",
         "TE",
-        9
+        9,
+        "CIN"
     ],
     [
         218,
         "Brandon",
         "McManus",
         "K",
-        10
+        10,
+        "DEN"
     ],
     [
         219,
         "Austin",
         "Hooper",
         "TE",
-        8
+        8,
+        "ATL"
     ],
     [
         220,
@@ -1527,35 +1729,40 @@
         "Marquez",
         "Valdes-Scantling",
         "WR",
-        7
+        7,
+        "GB"
     ],
     [
         222,
         "Keith",
         "Kirkwood",
         "WR",
-        6
+        6,
+        "NO"
     ],
     [
         223,
         "New",
         "York",
         "D",
-        11
+        11,
+        -1
     ],
     [
         224,
         "Blake",
         "Jarwin",
         "TE",
-        8
+        8,
+        "DAL"
     ],
     [
         225,
         "Trey",
         "Quinn",
         "WR",
-        4
+        4,
+        "WAS"
     ],
     [
         226,
@@ -1563,90 +1770,103 @@
         "Herndon",
         "IV",
         "TE",
-        11
+        11,
+        "NYJ"
     ],
     [
         227,
         "Cody",
         "Kessler",
         "QB",
-        9
+        9,
+        "PHI"
     ],
     [
         228,
         "Cole",
         "Beasley",
         "WR",
-        11
+        11,
+        "BUF"
     ],
     [
         229,
         "T.J.",
         "Yeldon",
         "RB",
-        -1
+        11,
+        "BUF"
     ],
     [
         230,
         "New",
         "York",
         "D",
-        9
+        9,
+        -1
     ],
     [
         231,
         "Chester",
         "Rogers",
         "WR",
-        -1
+        9,
+        "IND"
     ],
     [
         232,
         "Zach",
         "Pascal",
         "WR",
-        9
+        9,
+        "IND"
     ],
     [
         233,
         "Allen",
         "Hurns",
         "WR",
-        8
+        11,
+        "MIA"
     ],
     [
         234,
         "Laquon",
         "Treadwell",
         "WR",
-        10
+        10,
+        "MIN"
     ],
     [
         235,
         "Jermaine",
         "Kearse",
         "WR",
-        -1
+        6,
+        "DET"
     ],
     [
         236,
         "Jeff",
         "Driskel",
         "QB",
-        9
+        9,
+        "CIN"
     ],
     [
         237,
         "Cordarrelle",
         "Patterson",
         "WR",
-        5
+        5,
+        "CHI"
     ],
     [
         238,
         "Sebastian",
         "Janikowski",
         "K",
+        -1,
         -1
     ],
     [
@@ -1654,104 +1874,119 @@
         "Josh",
         "Rosen",
         "QB",
-        9
+        11,
+        "MIA"
     ],
     [
         240,
         "Travis",
         "Benjamin",
         "WR",
-        8
+        8,
+        "LAC"
     ],
     [
         241,
         "Vance",
         "McDonald",
         "TE",
-        7
+        7,
+        "PIT"
     ],
     [
         242,
         "Steven",
         "Hauschka",
         "K",
-        11
+        11,
+        "BUF"
     ],
     [
         243,
         "Gerald",
         "Everett",
         "TE",
-        12
+        12,
+        "LAR"
     ],
     [
         244,
         "Ian",
         "Thomas",
         "TE",
-        4
+        4,
+        "CAR"
     ],
     [
         245,
         "Jimmy",
         "Graham",
         "TE",
-        7
+        7,
+        "GB"
     ],
     [
         246,
         "Justin",
         "Jackson",
         "RB",
-        8
+        8,
+        "LAC"
     ],
     [
         247,
         "D.J.",
         "Chark",
         "WR",
-        9
+        9,
+        "JAC"
     ],
     [
         248,
         "Dustin",
         "Hopkins",
         "K",
-        4
+        4,
+        "WAS"
     ],
     [
         249,
         "Kyle",
         "Rudolph",
         "TE",
-        10
+        10,
+        "MIN"
     ],
     [
         250,
         "Aldrick",
         "Rosas",
         "K",
-        9
+        9,
+        "NYG"
     ],
     [
         251,
         "Torrey",
         "Smith",
         "WR",
-        4
+        4,
+        "CAR"
     ],
     [
         252,
         "Matt",
         "LaCosse",
         "TE",
-        11
+        11,
+        "NE"
     ],
     [
         253,
         "Antonio",
         "Gates",
         "TE",
+        -1,
         -1
     ],
     [
@@ -1759,14 +1994,16 @@
         "Austin",
         "Carr",
         "WR",
-        6
+        6,
+        "NO"
     ],
     [
         255,
         "Seth",
         "Roberts",
         "WR",
-        7
+        10,
+        "BAL"
     ],
     [
         256,
@@ -1779,20 +2016,23 @@
         "Randy",
         "Bullock",
         "K",
-        9
+        9,
+        "CIN"
     ],
     [
         258,
         "Jason",
         "Sanders",
         "K",
-        11
+        11,
+        "MIA"
     ],
     [
         259,
         "De'Anthony",
         "Thomas",
         "WR",
+        -1,
         -1
     ],
     [
@@ -1800,14 +2040,16 @@
         "Nick",
         "Vannett",
         "TE",
-        7
+        7,
+        "SEA"
     ],
     [
         261,
         "Tajae",
         "Sharpe",
         "WR",
-        8
+        8,
+        "TEN"
     ],
     [
         262,
@@ -1820,42 +2062,48 @@
         "Vernon",
         "Davis",
         "TE",
-        4
+        4,
+        "WAS"
     ],
     [
         264,
         "San",
         "Francisco",
         "D",
-        11
+        11,
+        -1
     ],
     [
         265,
         "Jordan",
         "Thomas",
         "TE",
-        10
+        10,
+        "HOU"
     ],
     [
         266,
         "Benjamin",
         "Watson",
         "TE",
-        -1
+        11,
+        "NE"
     ],
     [
         267,
         "Keelan",
         "Cole",
         "WR",
-        9
+        9,
+        "JAC"
     ],
     [
         268,
         "Phillip",
         "Dorsett",
         "WR",
-        11
+        11,
+        "NE"
     ],
     [
         269,
@@ -1868,28 +2116,32 @@
         "Tampa",
         "Bay",
         "D",
-        5
+        5,
+        -1
     ],
     [
         271,
         "Jason",
         "Myers",
         "K",
-        7
+        7,
+        "SEA"
     ],
     [
         272,
         "Giovani",
         "Bernard",
         "RB",
-        9
+        9,
+        "CIN"
     ],
     [
         273,
         "Chris",
         "Ivory",
         "RB",
-        11
+        -1,
+        -1
     ],
     [
         274,
@@ -1902,13 +2154,15 @@
         "Corey",
         "Clement",
         "RB",
-        9
+        9,
+        "PHI"
     ],
     [
         276,
         "Ty",
         "Montgomery",
         "RB",
-        -1
+        11,
+        "NYJ"
     ]
 ]

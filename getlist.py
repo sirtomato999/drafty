@@ -35,13 +35,19 @@ for row in rows:
     rank = int(str(row_data[0])[4:][:-5])
 
     name = str(row.find_all('span')[0]) [24:] [:-7] #takes slice from first span object (name)
-
+    
     pos = str(row_data[3])[4:6]
     if pos.startswith('K'):
         pos = 'K'
     elif pos == 'DS':
         pos = 'D'
         name = name[:-5]
+        
+    team = str(row.find_all('small')[0]).strip('</small>').lstrip('<small class="grey">')
+    if "FA" in team:
+        team = -1
+    elif "a href" in team:
+        team = -1
     try:
         bye = int(str(row_data[4]).strip('</td>').lstrip('<td>'))
     except ValueError:
@@ -58,9 +64,9 @@ for row in rows:
         name2 = 0
 
     if name2:
-        player = [rank,name0,name1,name2,pos,bye]
+        player = [rank,name0,name1,name2,pos,bye, team]
     elif name1:
-        player = [rank,name0,name1,pos,bye]
+        player = [rank,name0,name1,pos,bye, team]
     else:
         player = [rank,name0,pos,bye]
     list.append(player)

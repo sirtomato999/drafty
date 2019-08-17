@@ -13,7 +13,7 @@
 #
 
 import json, time, sys, os
-from pickhelper import pick
+#from pickhelper import pick
 
 if sys.platform == 'win32': # colorama win32 stuff. osx and linux both have ansi-complient terminals.
     import colorama         # stupid windows. we should all be using linux anyway
@@ -22,9 +22,6 @@ if sys.platform == 'win32': # colorama win32 stuff. osx and linux both have ansi
 list = open('list', 'r')
 list = json.load(list)
 
-if '-t' in sys.argv:
-    print(pick(list[5:], list[:5]))
-    sys.exit()
 def between_one_and(prompt, limit):
     while 1:
         command = input(prompt)
@@ -57,17 +54,25 @@ def topten(pos='',last=''):
 
 def fancylist(input_list, rank=0):
     print('\033[0;34m', end='')
-    print('#  Name                   Pos Bye')
+    print('#  Name                   Pos Team Bye')
     for i in range(len(input_list)):
-        name = ' '.join(input_list[i][1:-2])
-        pos = input_list[i][-2]
-        bye  = input_list[i][-1]
+        
+        name = ' '.join(input_list[i][1:3])
+        pos = input_list[i][-3]
+        bye  = input_list[i][-2]
+        team = input_list[i][-1]
+        rank = input_list[i][0]
+        
         if bye == -1:
-            bye = '-'
+            bye = 'FA'
+        if team == -1:
+            team = ''
+            
         if not rank:
             print("%-2i %-22s %-3s " % (i + 1, name, pos) + str(bye))
+            
         else:
-            print("%-2i %-22s %-3s " % (str(input_list[i][0]), name, pos) + str(bye))
+            print("%-2i %-22s %-3s %-4s %s" % (rank, name, pos, team, bye))
     print('\033[0m', end='')
 
 def main(increment=True):
@@ -93,10 +98,10 @@ def main(increment=True):
                            |___/
         """)
         print("\033[0;32mdraft v4.1.4\033[0m")
-        print('\033[0;34m=================================')
+        print('\033[0;34m======================================')
         top = topten()
         fancylist(top)
-        print('\033[0;34m=================================\033[0m')
+        print('\033[0;34m======================================\033[0m')
 
         ### CALCULATE PICK, ROUND, ETC. BASED ON OVERALL PICK
 
@@ -125,13 +130,13 @@ def main(increment=True):
         if index == picknum:
             addToTeam = True
             print("\nYour turn!\n")
-            if not team == []:
-                print('Team: ')
-                fancylist(team)
-                print()
+        if not team == []:
+            print('Team: ')
+            fancylist(team)
+            print()
 
-       # print('Overall pick: %i' % overallpick)
-       # print("Round: %i\nPick: %i\nIndex: %i\n"  % (round, pick, index))
+        print('Overall pick: %i' % overallpick)
+        print("Round: %i\nPick: %i\nIndex: %i\n"  % (round, pick, index))
 
 
         command = input("Type ? for help\n> ").lower()
@@ -160,14 +165,113 @@ def main(increment=True):
 
         if command == '?':
             input("""
-?		Show this help message
-r <last>	Show the overall rank of a player (first three letters)
-b <bye>		Search by byeweek
-<last>		Search for the player with that last name (first three letters)
+?		        Show this help message
+r <last>	    Show the overall rank of a player (first three letters)
+b <bye>		    Search by byeweek
+<last>		    Search for the player with that last name (first three letters)
 <top ten rank>	Draft top ten player
-<position>	Shows top ten players from that position\n\n\nPress Enter to continue""")
+<position>	    Shows top ten players from that position\n\n\nPress Enter to continue
+teams           Shows the team abbreviations for search for `tm`
+tm  <team abbr> searches for players on a team""")
+            increment=False
+            input('Press Enter to Continue...')
             continue
-     
+        
+        if command.startswith('t '):
+            command = command.lstrip('t ').strip().upper()
+            print(command)
+            temp = []
+            for player in list:
+                if player[-1] == command:
+                    temp.append(player)
+            fancylist(temp)
+            index = between_one_and("which item on the list would you like? ", len(temp))
+            list.remove(temp[index-1])
+            if addToTeam:
+                team.append(temp[index-1])
+                    
+        if command.startswith('teams'):
+            print('''
+            ARI: Arizona Cardinals
+ATL: Atlanta Falcons
+BAL: Baltimore Ravens
+BUF: Buffalo Bills
+CAR: Carolina Panthers
+CHI: Chicago Bears
+CIN: Cincinnati Bengals
+CLE: Cleveland Browns
+DAL: Dallas Cowboys
+DEN: Denver Broncos
+DET: Detroit Lions
+GB: Green Bay Packers
+HOU: Houston Texans
+IND: Indianapolis Colts
+JAX: Jacksonville Jaguars
+KC: Kansas City Chiefs
+MIA: Miami Dolphins
+MIN: Minnesota Vikings
+NE: New England Patriots
+NO: New Orleans Saints
+NYG: New York Giants
+NYJ: New York Jets
+OAK: Oakland Raiders
+PHI: Philadelphia Eagles
+PIT: Pittsburgh Steelers
+SD: San Diego Chargers
+SEA: Seattle Seahawks
+SF: San Francisco 49ers
+STL: Saint Louis Rams
+TB: Tampa Bay Buccaneers
+TEN Tennessee Titans
+WAS: Washington Redskins
+            ''')
+            increment=False
+            input('Press Enter to Continue...')
+            continue
+        # rank
+        if command.startswith('r '):
+            command = command.split()
+            if not len(command) == 2:
+                input("Usage: r <first 3 letters of player's last name>\nPress Enter...")
+
+            ranks = topten(last=command[1])
+            fancylist(ranks, rank=1)
+            input('Press Enter... ')
+
+        #byeweek
+        if command.startswith('b '):
+            bye = command.lstrip('b')
+            bye = bye.lstrip(' ')
+            byelist = []
+            try:
+                for player in list:
+                    if player[-1] == int(bye):
+                        byelist.append(player)
+            except:
+                input('a bye is only a number\nPress Enter...')
+                increment = False
+                continue
+            byelist = byelist[:10]
+            fancylist(byelist)
+            number = between_one_and('List number: ', len(byelist))
+            list.remove(byelist[number-1])
+        
+        # not bye
+        if command.startswith('nb'):
+            bye = command.lstrip('nb ')
+            byelist = []
+            try:
+                for player in list:
+                    if not player[-1] == int(bye):
+                        byelist.append(player)
+            except:
+                input('a bye is only a number\nPress Enter...')
+                increment = False
+                continue
+            byelist = byelist[:10]
+            fancylist(byelist)
+            number = between_one_and('List number: ', len(byelist))
+            list.remove(byelist[number-1])
         # last name
         if len(command) == 3:
             print('Last Name')
@@ -175,6 +279,7 @@ b <bye>		Search by byeweek
 
             if len(last) == 0:
                 input("No such player! Press Enter to continue... ")
+                increment = False
                 continue
             if len(last) == 1:
                 fancylist(last)
@@ -205,31 +310,7 @@ b <bye>		Search by byeweek
             if addToTeam:
                 team.append(pos[number-1])
 
-        # rank
-        if command.startswith('r'):
-            command = command.split()
-            if not len(command) == 2:
-                input("Usage: r <first 3 letters of player's last name>\nPress Enter...")
 
-            ranks = topten(last=command[1])
-            fancylist(ranks, rank=1)
-            input('Press Enter... ')
-
-        #byeweek
-        if command.startswith('b'):
-            bye = command.lstrip('b')
-            bye = bye.lstrip(' ')
-            byelist = []
-            try:
-                for player in players:
-                    if player[-1] == int(bye):
-                        byelist.append(player)
-            except:
-                input('a bye is only a number\nPress Enter...')
-                continue
-            fancylist(byelist)
-            number = between_one_and('List number: ', len(byelist))
-            list.remove(byelist[number-1])
 
 team = []
 

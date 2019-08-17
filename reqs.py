@@ -6,4 +6,4 @@ def install():
     else:
         python = 'python3'
 
-    os.system('%s -m pip install bs4 requests lxml' % python)
+    os.system('%s -m pip install bs4 requests lxml --user' % python)
