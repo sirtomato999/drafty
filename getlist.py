@@ -3,19 +3,12 @@
 # getlist.py downloads and parses a list from https://www.fantasypros.com
 #
 print('Working...')
-try:
-    from bs4 import BeautifulSoup
-    import requests
-    import sys
 
-except ImportError:
-    import reqs
-    reqs.install()
-    import requests
-    import sys
-    from bs4 import BeautifulSoup
-
+from bs4 import BeautifulSoup
+import requests
+import sys
 import json
+
 if "--ppr" in sys.argv:
     soup = BeautifulSoup(requests.get\
         ('https://www.fantasypros.com/nfl/rankings/ros-ppr-overall.php').text, 'lxml')
@@ -32,11 +25,10 @@ for row in rows:
         continue
     row_data = row.find_all('td')
 
-    rank = int(str(row_data[0])[4:][:-5])
-
+    rank = int(str(row_data[0])[40:][:-5])
     name = str(row.find_all('span')[0]) [24:] [:-7] #takes slice from first span object (name)
-    
     pos = str(row_data[3])[4:6]
+
     if pos.startswith('K'):
         pos = 'K'
     elif pos == 'DS':
@@ -44,6 +36,7 @@ for row in rows:
         name = name[:-5]
         
     team = str(row.find_all('small')[0]).strip('</small>').lstrip('<small class="grey">')
+
     if "FA" in team:
         team = -1
     elif "a href" in team:
@@ -52,30 +45,22 @@ for row in rows:
         bye = int(str(row_data[4]).strip('</td>').lstrip('<td>'))
     except ValueError:
         bye = -1
+
     name0 = name.split()[0]
     try:
         name1 = name.split()[1]
     except:
-        name1 = 0
+        name1 = ""
 
     try:
         name2 = name.split()[2]
     except:
-        name2 = 0
+        name2 = ""
 
-    if name2:
-        player = [rank,name0,name1,name2,pos,bye, team]
-    elif name1:
-        player = [rank,name0,name1,pos,bye, team]
-    else:
-        player = [rank,name0,pos,bye]
+    player = [rank, name0, name1, name2, pos, bye, team]
     list.append(player)
-    
-    for i in player:
-        print(i, end=' ')
-    print()
 
 f = open('list', 'w')
-list = json.dumps(list, indent=4, sort_keys=True)
+list = json.dumps(list, indent=2, sort_keys=True)
 f.write(list)
 print('List dumped to file "list" in the current directory')

@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # List: pickle file named list in same dir
 # Format: [ [<rank: int>, <first name: str>, <last name: str>, <Jr, Sr, etc: str>, <position: str>, <bye: int>] ]
@@ -7,7 +7,6 @@
 #            TE    -
 #            K     -
 #            DEF   D
-#            FLEX  Real Position
 #
 # Draft 4.1.4 by Matthew Wozniak
 #
@@ -172,12 +171,13 @@ b <bye>		    Search by byeweek
 <top ten rank>	Draft top ten player
 <position>	    Shows top ten players from that position\n\n\nPress Enter to continue
 teams           Shows the team abbreviations for search for `tm`
-tm  <team abbr> searches for players on a team""")
+t  <team abbr> searches for players on a team""")
             increment=False
             input('Press Enter to Continue...')
             continue
         
-        if command.startswith('t '):
+        # searches by teams #
+        if command.startswith('t '): 
             command = command.lstrip('t ').strip().upper()
             print(command)
             temp = []
@@ -189,10 +189,11 @@ tm  <team abbr> searches for players on a team""")
             list.remove(temp[index-1])
             if addToTeam:
                 team.append(temp[index-1])
-                    
+        
+        # prints teams #
         if command.startswith('teams'):
             print('''
-            ARI: Arizona Cardinals
+ARI: Arizona Cardinals
 ATL: Atlanta Falcons
 BAL: Baltimore Ravens
 BUF: Buffalo Bills
@@ -228,7 +229,8 @@ WAS: Washington Redskins
             increment=False
             input('Press Enter to Continue...')
             continue
-        # rank
+
+        # searches by rank #
         if command.startswith('r '):
             command = command.split()
             if not len(command) == 2:
@@ -238,14 +240,14 @@ WAS: Washington Redskins
             fancylist(ranks, rank=1)
             input('Press Enter... ')
 
-        #byeweek
+        # searches by byeweek # 
         if command.startswith('b '):
             bye = command.lstrip('b')
             bye = bye.lstrip(' ')
             byelist = []
             try:
                 for player in list:
-                    if player[-1] == int(bye):
+                    if player[-2] == int(bye):
                         byelist.append(player)
             except:
                 input('a bye is only a number\nPress Enter...')
