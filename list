@@ -1,2168 +1,331 @@
-[
-    [
-        1,
-        "Ezekiel",
-        "Elliott",
-        "RB",
-        8,
-        "DAL"
-    ],
-    [
-        2,
-        "Christian",
-        "McCaffrey",
-        "RB",
-        4,
-        "CAR"
-    ],
-    [
-        3,
-        "Saquon",
-        "Barkley",
-        "RB",
-        9,
-        "NYG"
-    ],
-    [
-        4,
-        "Nick",
-        "Chubb",
-        "RB",
-        11,
-        "CLE"
-    ],
-    [
-        5,
-        "DeAndre",
-        "Hopkins",
-        "WR",
-        10,
-        "HOU"
-    ],
-    [
-        6,
-        "Julio",
-        "Jones",
-        "WR",
-        8,
-        "ATL"
-    ],
-    [
-        7,
-        "Davante",
-        "Adams",
-        "WR",
-        7,
-        "GB"
-    ],
-    [
-        8,
-        "Alvin",
-        "Kamara",
-        "RB",
-        6,
-        "NO"
-    ],
-    [
-        9,
-        "Antonio",
-        "Brown",
-        "WR",
-        7,
-        "OAK"
-    ],
-    [
-        10,
-        "Michael",
-        "Thomas",
-        "WR",
-        6,
-        "NO"
-    ],
-    [
-        11,
-        "Todd",
-        "Gurley",
-        "RB",
-        12,
-        "LAR"
-    ],
-    [
-        12,
-        "Joe",
-        "Mixon",
-        "RB",
-        9,
-        "CIN"
-    ],
-    [
-        13,
-        "Tyreek",
-        "Hill",
-        "WR",
-        12,
-        "KC"
-    ],
-    [
-        14,
-        "Dalvin",
-        "Cook",
-        "RB",
-        10,
-        "MIN"
-    ],
-    [
-        15,
-        "Melvin",
-        "Gordon",
-        "RB",
-        8,
-        "LAC"
-    ],
-    [
-        16,
-        "JuJu",
-        "Smith-Schuster",
-        "WR",
-        7,
-        "PIT"
-    ],
-    [
-        17,
-        "Amari",
-        "Cooper",
-        "WR",
-        8,
-        "DAL"
-    ],
-    [
-        18,
-        "Adam",
-        "Thielen",
-        "WR",
-        10,
-        "MIN"
-    ],
-    [
-        19,
-        "Travis",
-        "Kelce",
-        "TE",
-        12,
-        "KC"
-    ],
-    [
-        20,
-        "Robert",
-        "Woods",
-        "WR",
-        12,
-        "LAR"
-    ],
-    [
-        21,
-        "Stefon",
-        "Diggs",
-        "WR",
-        10,
-        "MIN"
-    ],
-    [
-        22,
-        "Chris",
-        "Carson",
-        "RB",
-        7,
-        "SEA"
-    ],
-    [
-        23,
-        "Marlon",
-        "Mack",
-        "RB",
-        9,
-        "IND"
-    ],
-    [
-        24,
-        "Keenan",
-        "Allen",
-        "WR",
-        8,
-        "LAC"
-    ],
-    [
-        25,
-        "Derrick",
-        "Henry",
-        "RB",
-        8,
-        "TEN"
-    ],
-    [
-        26,
-        "Phillip",
-        "Lindsay",
-        "RB",
-        10,
-        "DEN"
-    ],
-    [
-        27,
-        "T.Y.",
-        "Hilton",
-        "WR",
-        9,
-        "IND"
-    ],
-    [
-        28,
-        "Mike",
-        "Evans",
-        "WR",
-        5,
-        "TB"
-    ],
-    [
-        29,
-        "Patrick",
-        "Mahomes",
-        "QB",
-        12,
-        "KC"
-    ],
-    [
-        30,
-        "George",
-        "Kittle",
-        "TE",
-        11,
-        "SF"
-    ],
-    [
-        31,
-        "Julian",
-        "Edelman",
-        "WR",
-        11,
-        "NE"
-    ],
-    [
-        32,
-        "Sony",
-        "Michel",
-        "RB",
-        11,
-        "NE"
-    ],
-    [
-        33,
-        "Kenny",
-        "Golladay",
-        "WR",
-        6,
-        "DET"
-    ],
-    [
-        34,
-        "Brandin",
-        "Cooks",
-        "WR",
-        12,
-        "LAR"
-    ],
-    [
-        35,
-        "Leonard",
-        "Fournette",
-        "RB",
-        9,
-        "JAC"
-    ],
-    [
-        36,
-        "David",
-        "Johnson",
-        "RB",
-        9,
-        "ARI"
-    ],
-    [
-        37,
-        "Jamaal",
-        "Williams",
-        "RB",
-        7,
-        "GB"
-    ],
-    [
-        38,
-        "Zach",
-        "Ertz",
-        "TE",
-        9,
-        "PHI"
-    ],
-    [
-        39,
-        "Ben",
-        "Roethlisberger",
-        "QB",
-        7,
-        "PIT"
-    ],
-    [
-        40,
-        "Andrew",
-        "Luck",
-        "QB",
-        9,
-        "IND"
-    ],
-    [
-        41,
-        "Tyler",
-        "Lockett",
-        "WR",
-        7,
-        "SEA"
-    ],
-    [
-        42,
-        "Eric",
-        "Ebron",
-        "TE",
-        9,
-        "IND"
-    ],
-    [
-        43,
-        "Mark",
-        "Ingram",
-        "RB",
-        10,
-        "BAL"
-    ],
-    [
-        44,
-        "Jarvis",
-        "Landry",
-        "WR",
-        11,
-        "CLE"
-    ],
-    [
-        45,
-        "Damien",
-        "Williams",
-        "RB",
-        12,
-        "KC"
-    ],
-    [
-        46,
-        "Alshon",
-        "Jeffery",
-        "WR",
-        9,
-        "PHI"
-    ],
-    [
-        47,
-        "Tarik",
-        "Cohen",
-        "RB",
-        5,
-        "CHI"
-    ],
-    [
-        48,
-        "James",
-        "Conner",
-        "RB",
-        7,
-        "PIT"
-    ],
-    [
-        49,
-        "Drew",
-        "Brees",
-        "QB",
-        6,
-        "NO"
-    ],
-    [
-        50,
-        "Corey",
-        "Davis",
-        "WR",
-        8,
-        "TEN"
-    ],
-    [
-        51,
-        "Aaron",
-        "Rodgers",
-        "QB",
-        7,
-        "GB"
-    ],
-    [
-        52,
-        "Russell",
-        "Wilson",
-        "QB",
-        7,
-        "SEA"
-    ],
-    [
-        53,
-        "Allen",
-        "Robinson",
-        "WR",
-        5,
-        "CHI"
-    ],
-    [
-        54,
-        "Elijah",
-        "McGuire",
-        "RB",
-        11,
-        "NYJ"
-    ],
-    [
-        55,
-        "Tevin",
-        "Coleman",
-        "RB",
-        11,
-        "SF"
-    ],
-    [
-        56,
-        "Doug",
-        "Baldwin",
-        "WR",
-        -1,
-        -1
-    ],
-    [
-        57,
-        "Gus",
-        "Edwards",
-        "RB",
-        10,
-        "BAL"
-    ],
-    [
-        58,
-        "Matt",
-        "Ryan",
-        "QB",
-        8,
-        "ATL"
-    ],
-    [
-        59,
-        "D.J.",
-        "Moore",
-        "WR",
-        4,
-        "CAR"
-    ],
-    [
-        60,
-        "Mike",
-        "Williams",
-        "WR",
-        8,
-        "LAC"
-    ],
-    [
-        61,
-        "Robby",
-        "Anderson",
-        "WR",
-        11,
-        "NYJ"
-    ],
-    [
-        62,
-        "Lamar",
-        "Miller",
-        "RB",
-        10,
-        "HOU"
-    ],
-    [
-        63,
-        "Chris",
-        "Godwin",
-        "WR",
-        5,
-        "TB"
-    ],
-    [
-        64,
-        "Adrian",
-        "Peterson",
-        "RB",
-        4,
-        "WAS"
-    ],
-    [
-        65,
-        "Kenyan",
-        "Drake",
-        "RB",
-        11,
-        "MIA"
-    ],
-    [
-        66,
-        "Mitch",
-        "Trubisky",
-        "QB",
-        5,
-        "CHI"
-    ],
-    [
-        67,
-        "Larry",
-        "Fitzgerald",
-        "WR",
-        9,
-        "ARI"
-    ],
-    [
-        68,
-        "Adam",
-        "Humphries",
-        "WR",
-        8,
-        "TEN"
-    ],
-    [
-        69,
-        "Deshaun",
-        "Watson",
-        "QB",
-        10,
-        "HOU"
-    ],
-    [
-        70,
-        "Courtland",
-        "Sutton",
-        "WR",
-        10,
-        "DEN"
-    ],
-    [
-        71,
-        "Jordan",
-        "Howard",
-        "RB",
-        9,
-        "PHI"
-    ],
-    [
-        72,
-        "Calvin",
-        "Ridley",
-        "WR",
-        8,
-        "ATL"
-    ],
-    [
-        73,
-        "Jameis",
-        "Winston",
-        "QB",
-        5,
-        "TB"
-    ],
-    [
-        74,
-        "James",
-        "White",
-        "RB",
-        11,
-        "NE"
-    ],
-    [
-        75,
-        "Spencer",
-        "Ware",
-        "RB",
-        9,
-        "IND"
-    ],
-    [
-        76,
-        "Josh",
-        "Adams",
-        "RB",
-        9,
-        "PHI"
-    ],
-    [
-        77,
-        "Dak",
-        "Prescott",
-        "QB",
-        8,
-        "DAL"
-    ],
-    [
-        78,
-        "Josh",
-        "Reynolds",
-        "WR",
-        12,
-        "LAR"
-    ],
-    [
-        79,
-        "Philip",
-        "Rivers",
-        "QB",
-        8,
-        "LAC"
-    ],
-    [
-        80,
-        "Jared",
-        "Goff",
-        "QB",
-        12,
-        "LAR"
-    ],
-    [
-        81,
-        "Baker",
-        "Mayfield",
-        "QB",
-        11,
-        "CLE"
-    ],
-    [
-        82,
-        "Kirk",
-        "Cousins",
-        "QB",
-        10,
-        "MIN"
-    ],
-    [
-        83,
-        "Jeff",
-        "Wilson",
-        "RB",
-        11,
-        "SF"
-    ],
-    [
-        84,
-        "Curtis",
-        "Samuel",
-        "WR",
-        4,
-        "CAR"
-    ],
-    [
-        85,
-        "Josh",
-        "Allen",
-        "QB",
-        11,
-        "BUF"
-    ],
-    [
-        86,
-        "Dion",
-        "Lewis",
-        "RB",
-        8,
-        "TEN"
-    ],
-    [
-        87,
-        "Lamar",
-        "Jackson",
-        "QB",
-        10,
-        "BAL"
-    ],
-    [
-        88,
-        "Peyton",
-        "Barber",
-        "RB",
-        5,
-        "TB"
-    ],
-    [
-        89,
-        "LeSean",
-        "McCoy",
-        "RB",
-        11,
-        "BUF"
-    ],
-    [
-        90,
-        "Dede",
-        "Westbrook",
-        "WR",
-        9,
-        "JAC"
-    ],
-    [
-        91,
-        "Golden",
-        "Tate",
-        "WR",
-        9,
-        "NYG"
-    ],
-    [
-        92,
-        "Tom",
-        "Brady",
-        "QB",
-        11,
-        "NE"
-    ],
-    [
-        93,
-        "Kenneth",
-        "Dixon",
-        "RB",
-        10,
-        "BAL"
-    ],
-    [
-        94,
-        "Doug",
-        "Martin",
-        "RB",
-        7,
-        "OAK"
-    ],
-    [
-        95,
-        "Jaylen",
-        "Samuels",
-        "RB",
-        7,
-        "PIT"
-    ],
-    [
-        96,
-        "Randall",
-        "Cobb",
-        "WR",
-        8,
-        "DAL"
-    ],
-    [
-        97,
-        "Kalen",
-        "Ballage",
-        "RB",
-        11,
-        "MIA"
-    ],
-    [
-        98,
-        "Robert",
-        "Foster",
-        "WR",
-        11,
-        "BUF"
-    ],
-    [
-        99,
-        "Chicago",
-        "D",
-        5
-    ],
-    [
-        100,
-        "Mohamed",
-        "Sanu",
-        "WR",
-        8,
-        "ATL"
-    ],
-    [
-        101,
-        "Jordy",
-        "Nelson",
-        "WR",
-        -1,
-        -1
-    ],
-    [
-        102,
-        "Sam",
-        "Darnold",
-        "QB",
-        11,
-        "NYJ"
-    ],
-    [
-        103,
-        "Sterling",
-        "Shepard",
-        "WR",
-        9,
-        "NYG"
-    ],
-    [
-        104,
-        "Nick",
-        "Foles",
-        "QB",
-        9,
-        "JAC"
-    ],
-    [
-        105,
-        "Taylor",
-        "Gabriel",
-        "WR",
-        5,
-        "CHI"
-    ],
-    [
-        106,
-        "Alfred",
-        "Blue",
-        "RB",
-        9,
-        "JAC"
-    ],
-    [
-        107,
-        "Minnesota",
-        "D",
-        10
-    ],
-    [
-        108,
-        "Theo",
-        "Riddick",
-        "RB",
-        10,
-        "DEN"
-    ],
-    [
-        109,
-        "Jalen",
-        "Richard",
-        "RB",
-        7,
-        "OAK"
-    ],
-    [
-        110,
-        "Austin",
-        "Ekeler",
-        "RB",
-        8,
-        "LAC"
-    ],
-    [
-        111,
-        "David",
-        "Moore",
-        "WR",
-        7,
-        "SEA"
-    ],
-    [
-        112,
-        "Derek",
-        "Carr",
-        "QB",
-        7,
-        "OAK"
-    ],
-    [
-        113,
-        "Baltimore",
-        "D",
-        10
-    ],
-    [
-        114,
-        "Jacksonville",
-        "D",
-        9
-    ],
-    [
-        115,
-        "Houston",
-        "D",
-        10
-    ],
-    [
-        116,
-        "Los",
-        "Angeles",
-        "D",
-        8,
-        -1
-    ],
-    [
-        117,
-        "Anthony",
-        "Miller",
-        "WR",
-        5,
-        "CHI"
-    ],
-    [
-        118,
-        "Denver",
-        "D",
-        10
-    ],
-    [
-        119,
-        "Kenny",
-        "Stills",
-        "WR",
-        11,
-        "MIA"
-    ],
-    [
-        120,
-        "John",
-        "Kelly",
-        "RB",
-        12,
-        "LAR"
-    ],
-    [
-        121,
-        "Nick",
-        "Mullens",
-        "QB",
-        11,
-        "SF"
-    ],
-    [
-        122,
-        "John",
-        "Ross",
-        "WR",
-        9,
-        "CIN"
-    ],
-    [
-        123,
-        "Rex",
-        "Burkhead",
-        "RB",
-        11,
-        "NE"
-    ],
-    [
-        124,
-        "Tre'Quan",
-        "Smith",
-        "WR",
-        6,
-        "NO"
-    ],
-    [
-        125,
-        "Greg",
-        "Zuerlein",
-        "K",
-        12,
-        "LAR"
-    ],
-    [
-        126,
-        "Tennessee",
-        "D",
-        8
-    ],
-    [
-        127,
-        "Los",
-        "Angeles",
-        "D",
-        12,
-        -1
-    ],
-    [
-        128,
-        "Eli",
-        "Manning",
-        "QB",
-        9,
-        "NYG"
-    ],
-    [
-        129,
-        "Chris",
-        "Conley",
-        "WR",
-        9,
-        "JAC"
-    ],
-    [
-        130,
-        "Royce",
-        "Freeman",
-        "RB",
-        10,
-        "DEN"
-    ],
-    [
-        131,
-        "Stephen",
-        "Gostkowski",
-        "K",
-        11,
-        "NE"
-    ],
-    [
-        132,
-        "C.J.",
-        "Anderson",
-        "RB",
-        6,
-        "DET"
-    ],
-    [
-        133,
-        "Willie",
-        "Snead",
-        "WR",
-        10,
-        "BAL"
-    ],
-    [
-        134,
-        "Matthew",
-        "Stafford",
-        "QB",
-        6,
-        "DET"
-    ],
-    [
-        135,
-        "Keke",
-        "Coutee",
-        "WR",
-        10,
-        "HOU"
-    ],
-    [
-        136,
-        "Justin",
-        "Tucker",
-        "K",
-        10,
-        "BAL"
-    ],
-    [
-        137,
-        "Jared",
-        "Cook",
-        "TE",
-        6,
-        "NO"
-    ],
-    [
-        138,
-        "Dallas",
-        "D",
-        8
-    ],
-    [
-        139,
-        "Michael",
-        "Gallup",
-        "WR",
-        8,
-        "DAL"
-    ],
-    [
-        140,
-        "Latavius",
-        "Murray",
-        "RB",
-        6,
-        "NO"
-    ],
-    [
-        141,
-        "Harrison",
-        "Butker",
-        "K",
-        12,
-        "KC"
-    ],
-    [
-        142,
-        "Josh",
-        "Doctson",
-        "WR",
-        4,
-        "WAS"
-    ],
-    [
-        143,
-        "LeGarrette",
-        "Blount",
-        "RB",
-        -1,
-        -1
-    ],
-    [
-        144,
-        "Antonio",
-        "Callaway",
-        "WR",
-        11,
-        "CLE"
-    ],
-    [
-        145,
-        "Seattle",
-        "D",
-        7
-    ],
-    [
-        146,
-        "John",
-        "Brown",
-        "WR",
-        11,
-        "BUF"
-    ],
-    [
-        147,
-        "Nyheim",
-        "Hines",
-        "RB",
-        9,
-        "IND"
-    ],
-    [
-        148,
-        "Michael",
-        "Crabtree",
-        "WR",
-        -1,
-        -1
-    ],
-    [
-        149,
-        "Washington",
-        "D",
-        4
-    ],
-    [
-        150,
-        "Ka'imi",
-        "Fairbairn",
-        "K",
-        10,
-        "HOU"
-    ],
-    [
-        151,
-        "Duke",
-        "Johnson",
-        "RB",
-        10,
-        "HOU"
-    ],
-    [
-        152,
-        "Zay",
-        "Jones",
-        "WR",
-        11,
-        "BUF"
-    ],
-    [
-        153,
-        "Tyrell",
-        "Williams",
-        "WR",
-        7,
-        "OAK"
-    ],
-    [
-        154,
-        "Matt",
-        "Bryant",
-        "K",
-        -1,
-        -1
-    ],
-    [
-        155,
-        "Wil",
-        "Lutz",
-        "K",
-        6,
-        "NO"
-    ],
-    [
-        156,
-        "Arizona",
-        "D",
-        9
-    ],
-    [
-        157,
-        "DaeSean",
-        "Hamilton",
-        "WR",
-        10,
-        "DEN"
-    ],
-    [
-        158,
-        "Matt",
-        "Prater",
-        "K",
-        6,
-        "DET"
-    ],
-    [
-        159,
-        "Pittsburgh",
-        "D",
-        7
-    ],
-    [
-        160,
-        "Dan",
-        "Bailey",
-        "K",
-        10,
-        "MIN"
-    ],
-    [
-        161,
-        "Jake",
-        "Elliott",
-        "K",
-        9,
-        "PHI"
-    ],
-    [
-        162,
-        "Case",
-        "Keenum",
-        "QB",
-        4,
-        "WAS"
-    ],
-    [
-        163,
-        "Marcus",
-        "Mariota",
-        "QB",
-        8,
-        "TEN"
-    ],
-    [
-        164,
-        "Donte",
-        "Moncrief",
-        "WR",
-        7,
-        "PIT"
-    ],
-    [
-        165,
-        "Jamison",
-        "Crowder",
-        "WR",
-        11,
-        "NYJ"
-    ],
-    [
-        166,
-        "Zach",
-        "Zenner",
-        "RB",
-        6,
-        "DET"
-    ],
-    [
-        167,
-        "Taywan",
-        "Taylor",
-        "WR",
-        8,
-        "TEN"
-    ],
-    [
-        168,
-        "Rob",
-        "Gronkowski",
-        "TE",
-        -1,
-        -1
-    ],
-    [
-        169,
-        "Evan",
-        "Engram",
-        "TE",
-        9,
-        "NYG"
-    ],
-    [
-        170,
-        "Cameron",
-        "Brate",
-        "TE",
-        5,
-        "TB"
-    ],
-    [
-        171,
-        "Josh",
-        "Johnson",
-        "QB",
-        6,
-        "DET"
-    ],
-    [
-        172,
-        "Devin",
-        "Funchess",
-        "WR",
-        9,
-        "IND"
-    ],
-    [
-        173,
-        "Chris",
-        "Thompson",
-        "RB",
-        4,
-        "WAS"
-    ],
-    [
-        174,
-        "Mason",
-        "Crosby",
-        "K",
-        7,
-        "GB"
-    ],
-    [
-        175,
-        "Philadelphia",
-        "D",
-        9
-    ],
-    [
-        176,
-        "Michael",
-        "Badgley",
-        "K",
-        8,
-        "LAC"
-    ],
-    [
-        177,
-        "Buffalo",
-        "D",
-        11
-    ],
-    [
-        178,
-        "Isaiah",
-        "McKenzie",
-        "WR",
-        11,
-        "BUF"
-    ],
-    [
-        179,
-        "Sammy",
-        "Watkins",
-        "WR",
-        12,
-        "KC"
-    ],
-    [
-        180,
-        "Rashaad",
-        "Penny",
-        "RB",
-        7,
-        "SEA"
-    ],
-    [
-        181,
-        "Carolina",
-        "D",
-        4
-    ],
-    [
-        182,
-        "Darren",
-        "Sproles",
-        "RB",
-        9,
-        "PHI"
-    ],
-    [
-        183,
-        "Kansas",
-        "City",
-        "D",
-        12,
-        -1
-    ],
-    [
-        184,
-        "DeSean",
-        "Jackson",
-        "WR",
-        9,
-        "PHI"
-    ],
-    [
-        185,
-        "Indianapolis",
-        "D",
-        9
-    ],
-    [
-        186,
-        "Tyler",
-        "Boyd",
-        "WR",
-        9,
-        "CIN"
-    ],
-    [
-        187,
-        "David",
-        "Njoku",
-        "TE",
-        11,
-        "CLE"
-    ],
-    [
-        188,
-        "Bruce",
-        "Ellington",
-        "WR",
-        -1,
-        -1
-    ],
-    [
-        189,
-        "New",
-        "Orleans",
-        "D",
-        6,
-        -1
-    ],
-    [
-        190,
-        "Danny",
-        "Amendola",
-        "WR",
-        6,
-        "DET"
-    ],
-    [
-        191,
-        "Alex",
-        "Erickson",
-        "WR",
-        9,
-        "CIN"
-    ],
-    [
-        192,
-        "Ryan",
-        "Succop",
-        "K",
-        8,
-        "TEN"
-    ],
-    [
-        193,
-        "Brett",
-        "Maher",
-        "K",
-        8,
-        "DAL"
-    ],
-    [
-        194,
-        "Chris",
-        "Hogan",
-        "WR",
-        4,
-        "CAR"
-    ],
-    [
-        195,
-        "Devante",
-        "Parker",
-        "WR",
-        11,
-        "MIA"
-    ],
-    [
-        196,
-        "Cleveland",
-        "D",
-        11
-    ],
-    [
-        197,
-        "Marquise",
-        "Goodwin",
-        "WR",
-        11,
-        "SF"
-    ],
-    [
-        198,
-        "Trent",
-        "Sherfield",
-        "WR",
-        9,
-        "ARI"
-    ],
-    [
-        199,
-        "Wendell",
-        "Smallwood",
-        "RB",
-        9,
-        "PHI"
-    ],
-    [
-        200,
-        "Equanimeous",
-        "St.",
-        "Brown",
-        "WR",
-        7,
-        "GB"
-    ],
-    [
-        201,
-        "D'Onta",
-        "Foreman",
-        "RB",
-        9,
-        "IND"
-    ],
-    [
-        202,
-        "Josh",
-        "Lambo",
-        "K",
-        9,
-        "JAC"
-    ],
-    [
-        203,
-        "Adam",
-        "Vinatieri",
-        "K",
-        9,
-        "IND"
-    ],
-    [
-        204,
-        "Cody",
-        "Parkey",
-        "K",
-        -1,
-        -1
-    ],
-    [
-        205,
-        "Marcell",
-        "Ateman",
-        "WR",
-        7,
-        "OAK"
-    ],
-    [
-        206,
-        "Robbie",
-        "Gould",
-        "K",
-        11,
-        "SF"
-    ],
-    [
-        207,
-        "Ryan",
-        "Tannehill",
-        "QB",
-        8,
-        "TEN"
-    ],
-    [
-        208,
-        "Jaron",
-        "Brown",
-        "WR",
-        7,
-        "SEA"
-    ],
-    [
-        209,
-        "New",
-        "England",
-        "D",
-        11,
-        -1
-    ],
-    [
-        210,
-        "Green",
-        "Bay",
-        "D",
-        7,
-        -1
-    ],
-    [
-        211,
-        "Mike",
-        "Davis",
-        "RB",
-        5,
-        "CHI"
-    ],
-    [
-        212,
-        "Dontrelle",
-        "Inman",
-        "WR",
-        11,
-        "NE"
-    ],
-    [
-        213,
-        "Rashard",
-        "Higgins",
-        "WR",
-        11,
-        "CLE"
-    ],
-    [
-        214,
-        "Kelvin",
-        "Benjamin",
-        "WR",
-        -1,
-        -1
-    ],
-    [
-        215,
-        "Tim",
-        "Patrick",
-        "WR",
-        10,
-        "DEN"
-    ],
-    [
-        216,
-        "Nelson",
-        "Agholor",
-        "WR",
-        9,
-        "PHI"
-    ],
-    [
-        217,
-        "C.J.",
-        "Uzomah",
-        "TE",
-        9,
-        "CIN"
-    ],
-    [
-        218,
-        "Brandon",
-        "McManus",
-        "K",
-        10,
-        "DEN"
-    ],
-    [
-        219,
-        "Austin",
-        "Hooper",
-        "TE",
-        8,
-        "ATL"
-    ],
-    [
-        220,
-        "Atlanta",
-        "D",
-        8
-    ],
-    [
-        221,
-        "Marquez",
-        "Valdes-Scantling",
-        "WR",
-        7,
-        "GB"
-    ],
-    [
-        222,
-        "Keith",
-        "Kirkwood",
-        "WR",
-        6,
-        "NO"
-    ],
-    [
-        223,
-        "New",
-        "York",
-        "D",
-        11,
-        -1
-    ],
-    [
-        224,
-        "Blake",
-        "Jarwin",
-        "TE",
-        8,
-        "DAL"
-    ],
-    [
-        225,
-        "Trey",
-        "Quinn",
-        "WR",
-        4,
-        "WAS"
-    ],
-    [
-        226,
-        "Chris",
-        "Herndon",
-        "IV",
-        "TE",
-        11,
-        "NYJ"
-    ],
-    [
-        227,
-        "Cody",
-        "Kessler",
-        "QB",
-        9,
-        "PHI"
-    ],
-    [
-        228,
-        "Cole",
-        "Beasley",
-        "WR",
-        11,
-        "BUF"
-    ],
-    [
-        229,
-        "T.J.",
-        "Yeldon",
-        "RB",
-        11,
-        "BUF"
-    ],
-    [
-        230,
-        "New",
-        "York",
-        "D",
-        9,
-        -1
-    ],
-    [
-        231,
-        "Chester",
-        "Rogers",
-        "WR",
-        9,
-        "IND"
-    ],
-    [
-        232,
-        "Zach",
-        "Pascal",
-        "WR",
-        9,
-        "IND"
-    ],
-    [
-        233,
-        "Allen",
-        "Hurns",
-        "WR",
-        11,
-        "MIA"
-    ],
-    [
-        234,
-        "Laquon",
-        "Treadwell",
-        "WR",
-        10,
-        "MIN"
-    ],
-    [
-        235,
-        "Jermaine",
-        "Kearse",
-        "WR",
-        6,
-        "DET"
-    ],
-    [
-        236,
-        "Jeff",
-        "Driskel",
-        "QB",
-        9,
-        "CIN"
-    ],
-    [
-        237,
-        "Cordarrelle",
-        "Patterson",
-        "WR",
-        5,
-        "CHI"
-    ],
-    [
-        238,
-        "Sebastian",
-        "Janikowski",
-        "K",
-        -1,
-        -1
-    ],
-    [
-        239,
-        "Josh",
-        "Rosen",
-        "QB",
-        11,
-        "MIA"
-    ],
-    [
-        240,
-        "Travis",
-        "Benjamin",
-        "WR",
-        8,
-        "LAC"
-    ],
-    [
-        241,
-        "Vance",
-        "McDonald",
-        "TE",
-        7,
-        "PIT"
-    ],
-    [
-        242,
-        "Steven",
-        "Hauschka",
-        "K",
-        11,
-        "BUF"
-    ],
-    [
-        243,
-        "Gerald",
-        "Everett",
-        "TE",
-        12,
-        "LAR"
-    ],
-    [
-        244,
-        "Ian",
-        "Thomas",
-        "TE",
-        4,
-        "CAR"
-    ],
-    [
-        245,
-        "Jimmy",
-        "Graham",
-        "TE",
-        7,
-        "GB"
-    ],
-    [
-        246,
-        "Justin",
-        "Jackson",
-        "RB",
-        8,
-        "LAC"
-    ],
-    [
-        247,
-        "D.J.",
-        "Chark",
-        "WR",
-        9,
-        "JAC"
-    ],
-    [
-        248,
-        "Dustin",
-        "Hopkins",
-        "K",
-        4,
-        "WAS"
-    ],
-    [
-        249,
-        "Kyle",
-        "Rudolph",
-        "TE",
-        10,
-        "MIN"
-    ],
-    [
-        250,
-        "Aldrick",
-        "Rosas",
-        "K",
-        9,
-        "NYG"
-    ],
-    [
-        251,
-        "Torrey",
-        "Smith",
-        "WR",
-        4,
-        "CAR"
-    ],
-    [
-        252,
-        "Matt",
-        "LaCosse",
-        "TE",
-        11,
-        "NE"
-    ],
-    [
-        253,
-        "Antonio",
-        "Gates",
-        "TE",
-        -1,
-        -1
-    ],
-    [
-        254,
-        "Austin",
-        "Carr",
-        "WR",
-        6,
-        "NO"
-    ],
-    [
-        255,
-        "Seth",
-        "Roberts",
-        "WR",
-        10,
-        "BAL"
-    ],
-    [
-        256,
-        "Miami",
-        "D",
-        11
-    ],
-    [
-        257,
-        "Randy",
-        "Bullock",
-        "K",
-        9,
-        "CIN"
-    ],
-    [
-        258,
-        "Jason",
-        "Sanders",
-        "K",
-        11,
-        "MIA"
-    ],
-    [
-        259,
-        "De'Anthony",
-        "Thomas",
-        "WR",
-        -1,
-        -1
-    ],
-    [
-        260,
-        "Nick",
-        "Vannett",
-        "TE",
-        7,
-        "SEA"
-    ],
-    [
-        261,
-        "Tajae",
-        "Sharpe",
-        "WR",
-        8,
-        "TEN"
-    ],
-    [
-        262,
-        "Cincinnati",
-        "D",
-        9
-    ],
-    [
-        263,
-        "Vernon",
-        "Davis",
-        "TE",
-        4,
-        "WAS"
-    ],
-    [
-        264,
-        "San",
-        "Francisco",
-        "D",
-        11,
-        -1
-    ],
-    [
-        265,
-        "Jordan",
-        "Thomas",
-        "TE",
-        10,
-        "HOU"
-    ],
-    [
-        266,
-        "Benjamin",
-        "Watson",
-        "TE",
-        11,
-        "NE"
-    ],
-    [
-        267,
-        "Keelan",
-        "Cole",
-        "WR",
-        9,
-        "JAC"
-    ],
-    [
-        268,
-        "Phillip",
-        "Dorsett",
-        "WR",
-        11,
-        "NE"
-    ],
-    [
-        269,
-        "Detroit",
-        "D",
-        6
-    ],
-    [
-        270,
-        "Tampa",
-        "Bay",
-        "D",
-        5,
-        -1
-    ],
-    [
-        271,
-        "Jason",
-        "Myers",
-        "K",
-        7,
-        "SEA"
-    ],
-    [
-        272,
-        "Giovani",
-        "Bernard",
-        "RB",
-        9,
-        "CIN"
-    ],
-    [
-        273,
-        "Chris",
-        "Ivory",
-        "RB",
-        -1,
-        -1
-    ],
-    [
-        274,
-        "Oakland",
-        "D",
-        7
-    ],
-    [
-        275,
-        "Corey",
-        "Clement",
-        "RB",
-        9,
-        "PHI"
-    ],
-    [
-        276,
-        "Ty",
-        "Montgomery",
-        "RB",
-        11,
-        "NYJ"
-    ]
-]
+   1 Christian McCaffrey       RB  7 CAR
+   2 Derrick Henry             RB 11 TEN
+   3 Ezekiel Elliott           RB  8 DAL
+   4 Leonard Fournette         RB 10 JAC
+   5 Alvin Kamara              RB  9 NO
+   6 Nick Chubb                RB  7 CLE
+   7 Aaron Jones               RB 11 GB
+   8 Michael Thomas            WR  9 NO
+   9 DeAndre Hopkins           WR 12 ARI
+  10 Tyreek Hill               WR 12 KC
+  11 Davante Adams             WR 11 GB
+  12 Saquon Barkley            RB 11 NYG
+  13 Melvin Gordon             RB 10 DEN
+  14 Dalvin Cook               RB 12 MIN
+  15 Travis Kelce              TE 12 KC
+  16 Julio Jones               WR  9 ATL
+  17 Mark Ingram II            RB  8 BAL
+  18 Todd Gurley               RB  9 ATL
+  19 Amari Cooper              WR  8 DAL
+  20 Julian Edelman            WR 10 NE
+  21 D.J. Moore                WR  7 CAR
+  22 Le'Veon Bell              RB  4 NYJ
+  23 Joe Mixon                 RB  9 CIN
+  24 Keenan Allen              WR 12 LAC
+  25 Cooper Kupp               WR  9 LAR
+  26 Stefon Diggs              WR  6 BUF
+  27 Phillip Lindsay           RB 10 DEN
+  28 Lamar Jackson             QB  8 BAL
+  29 Josh Jacobs               RB -1 LV
+  30 Tyler Lockett             WR 11 SEA
+  31 Allen Robinson            WR  6 CHI
+  32 Chris Godwin              WR  7 TB
+  33 Courtland Sutton          WR 10 DEN
+  34 George Kittle             TE  4 SF
+  35 Austin Ekeler             RB 12 LAC
+  36 Miles Sanders             RB 10 PHI
+  37 Odell Beckham Jr.         WR  7 CLE
+  38 Marlon Mack               RB  6 IND
+  39 Devin Singletary          RB  6 BUF
+  40 Zach Ertz                 TE 10 PHI
+  41 David Montgomery          RB  6 CHI
+  42 Devonta Freeman           RB -1 -1
+  43 Kenny Golladay            WR  5 DET
+  44 Robert Woods              WR  9 LAR
+  45 John Brown                WR  6 BUF
+  46 James Conner              RB  7 PIT
+  47 Sony Michel               RB 10 NE
+  48 Jarvis Landry             WR  7 CLE
+  49 Michael Gallup            WR  8 DAL
+  50 Hunter Henry              TE 12 LAC
+  51 Raheem Mostert            RB  4 SF
+  52 DeVante Parker            WR  5 MIA
+  53 Patrick Mahomes           QB 12 KC
+  54 Darren Waller             TE -1 LV
+  55 Adam Thielen              WR 12 MIN
+  56 Russell Wilson            QB 11 SEA
+  57 Deshaun Watson            QB 10 HOU
+  58 Kareem Hunt               RB  7 CLE
+  59 Kenyan Drake              RB 12 ARI
+  60 Christian Kirk            WR 12 ARI
+  61 Carlos Hyde               RB 11 SEA
+  62 Austin Hooper             TE  7 CLE
+  63 Jamaal Williams           RB 11 GB
+  64 Adrian Peterson           RB 10 WAS
+  65 D.J. Chark                WR 10 JAC
+  66 James White               RB 10 NE
+  67 D.K. Metcalf              WR 11 SEA
+  68 Mark Andrews              TE  8 BAL
+  69 Ronald Jones II           RB  7 TB
+  70 Latavius Murray           RB  9 NO
+  71 Mike Williams             WR 12 LAC
+  72 Bo Scarbrough             RB  5 DET
+  73 Tyler Boyd                WR  9 CIN
+  74 Emmanuel Sanders          WR  9 NO
+  75 Curtis Samuel             WR  7 CAR
+  76 Aaron Rodgers             QB 11 GB
+  77 T.Y. Hilton               WR  6 IND
+  78 Jameis Winston            QB  9 NO
+  79 Kyler Murray              QB 12 ARI
+  80 Drew Brees                QB  9 NO
+  81 Damien Williams           RB 12 KC
+  82 Dak Prescott              QB  8 DAL
+  83 Sterling Shepard          WR 11 NYG
+  84 Matt Breida               RB  5 MIA
+  85 LeSean McCoy              RB -1 -1
+  86 JuJu Smith-Schuster       WR  7 PIT
+  87 Jack Doyle                TE  6 IND
+  88 Robby Anderson            WR  7 CAR
+  89 Will Fuller               WR 10 HOU
+  90 Golden Tate               WR 11 NYG
+  91 A.J. Brown                WR 11 TEN
+  92 Jamison Crowder           WR  4 NYJ
+  93 Tevin Coleman             RB  4 SF
+  94 Terry McLaurin            WR 10 WAS
+  95 Deebo Samuel              WR  4 SF
+  96 Josh Allen                QB  6 BUF
+  97 Matt Ryan                 QB  9 ATL
+  98 Marquise Brown            WR  8 BAL
+  99 Royce Freeman             RB 10 DEN
+ 100 Sammy Watkins             WR 12 KC
+ 101 Kirk Cousins              QB 12 MIN
+ 102 Jordan Howard             RB  5 MIA
+ 103 Ryan Tannehill            QB 11 TEN
+ 104 David Johnson             RB 10 HOU
+ 105 Jared Cook                TE  9 NO
+ 106 Carson Wentz              QB 10 PHI
+ 107 Dede Westbrook            WR 10 JAC
+ 108 Tarik Cohen               RB  6 CHI
+ 109 James Washington          WR  7 PIT
+ 110 Brandin Cooks             WR 10 HOU
+ 111 Duke Johnson              RB 10 HOU
+ 112 Tyrell Williams           WR -1 LV
+ 113 Tom Brady                 QB  7 TB
+ 114 Dallas Goedert            TE 10 PHI
+ 115 Darius Slayton            WR 11 NYG
+ 116 Jimmy Garoppolo           QB  4 SF
+ 117 Mohamed Sanu              WR 10 NE
+ 118 Zach Pascal               WR  6 IND
+ 119 Alexander Mattison        RB 12 MIN
+ 120 Frank Gore                RB  4 NYJ
+ 121 Jared Goff                QB  9 LAR
+ 122 O.J. Howard               TE  7 TB
+ 123 Anthony Miller            WR  6 CHI
+ 124 Baker Mayfield            QB  7 CLE
+ 125 Philip Rivers             QB  6 IND
+ 126 Benny Snell Jr.           RB  7 PIT
+ 127 Tony Pollard              RB  8 DAL
+ 128 Jaylen Samuels            RB  7 PIT
+ 129 Jacob Hollister           TE 11 SEA
+ 130 Ryan Fitzpatrick          QB  5 MIA
+ 131 Darwin Thompson           RB 12 KC
+ 132 Noah Fant                 TE 10 DEN
+ 133 Mitch Trubisky            QB  6 CHI
+ 134 New England               D  10 
+ 135 San Francisco             D   4 
+ 136 Peyton Barber             RB 10 WAS
+ 137 Gus Edwards               RB  8 BAL
+ 138 Larry Fitzgerald          WR 12 ARI
+ 139 Buffalo                   D   6 
+ 140 Sam Darnold               QB  4 NYJ
+ 141 Jacoby Brissett           QB  6 IND
+ 142 Chicago                   D   6 
+ 143 Patrick Laird             RB  5 MIA
+ 144 Los Angeles               D   9 
+ 145 Tyler Higbee              TE  9 LAR
+ 146 New Orleans               D   9 
+ 147 Randall Cobb              WR 10 HOU
+ 148 Malcolm Brown             RB  9 LAR
+ 149 Baltimore                 D   8 
+ 150 Josh Gordon               WR -1 -1
+ 151 Kenny Stills              WR 10 HOU
+ 152 Andy Dalton               QB  8 DAL
+ 153 Demaryius Thomas          WR -1 -1
+ 154 Brian Hill                RB  9 ATL
+ 155 Harrison Butker           K  12 KC
+ 156 Minnesota                 D  12 
+ 157 Wil Lutz                  K   9 NO
+ 158 Justin Tucker             K   8 BAL
+ 159 Kyle Rudolph              TE 12 MIN
+ 160 Greg Zuerlein             K   8 DAL
+ 161 DeAndre Washington        RB 12 KC
+ 162 Diontae Johnson           WR  7 PIT
+ 163 Gardner Minshew II        QB 10 JAC
+ 164 Corey Davis               WR 11 TEN
+ 165 Derek Carr                QB -1 LV
+ 166 Chris Conley              WR 10 JAC
+ 167 Ryquell Armstead          RB 10 JAC
+ 168 Robbie Gould              K   4 SF
+ 169 David Njoku               TE  7 CLE
+ 170 Cole Beasley              WR  6 BUF
+ 171 Ka'imi Fairbairn          K  10 HOU
+ 172 Greg Olsen                TE 11 SEA
+ 173 Mason Crosby              K  11 GB
+ 174 Mecole Hardman            WR 12 KC
+ 175 Allen Lazard              WR 11 GB
+ 176 Nyheim Hines              RB  6 IND
+ 177 Rex Burkhead              RB 10 NE
+ 178 Matt Gay                  K   7 TB
+ 179 Jeff Wilson               RB  4 SF
+ 180 Chase Edmonds             RB 12 ARI
+ 181 Mike Gesicki              TE  5 MIA
+ 182 Reggie Bonnafon           RB  7 CAR
+ 183 Allen Hurns               WR  5 MIA
+ 184 J.D. McKissic             RB 10 WAS
+ 185 Breshad Perriman          WR  4 NYJ
+ 186 Pittsburgh                D   7 
+ 187 Jake Elliott              K  10 PHI
+ 188 Jordan Wilkins            RB  6 IND
+ 189 Jacksonville              D  10 
+ 190 Matt Prater               K   5 DET
+ 191 Chris Thompson            RB 10 JAC
+ 192 Phillip Dorsett           WR 11 SEA
+ 193 Nelson Agholor            WR -1 LV
+ 194 Darrell Henderson         RB  9 LAR
+ 195 Drew Lock                 QB 10 DEN
+ 196 Green Bay                 D  11 
+ 197 Auden Tate                WR  9 CIN
+ 198 Ty Johnson                RB  5 DET
+ 199 N'Keal Harry              WR 10 NE
+ 200 Jason Witten              TE -1 LV
+ 201 Michael Badgley           K  12 LAC
+ 202 Danny Amendola            WR  5 DET
+ 203 Philadelphia              D  10 
+ 204 Jay Ajayi                 RB -1 -1
+ 205 Daniel Jones              QB 11 NYG
+ 206 Gerald Everett            TE  9 LAR
+ 207 Nick Folk                 K  -1 -1
+ 208 Wayne Gallman             RB 11 NYG
+ 209 Kyle Allen                QB 10 WAS
+ 210 Ted Ginn                  WR  6 CHI
+ 211 Giovani Bernard           RB  9 CIN
+ 212 Josh Reynolds             WR  9 LAR
+ 213 Denver                    D  10 
+ 214 Jason Myers               K  11 SEA
+ 215 Vance McDonald            TE  7 PIT
+ 216 Jonathan Williams         RB  6 IND
+ 217 Taylor Gabriel            WR -1 -1
+ 218 Ian Thomas                TE  7 CAR
+ 219 Jakobi Meyers             WR 10 NE
+ 220 Tennessee                 D  11 
+ 221 Russell Gage              WR  9 ATL
+ 222 Carolina                  D   7 
+ 223 John Ross                 WR  9 CIN
+ 224 Dallas                    D   8 
+ 225 Marquez Valdes-Scantling  WR 11 GB
+ 226 Tre'Quan Smith            WR  9 NO
+ 227 Seattle                   D  11 
+ 228 Brandon Bolden            RB 10 NE
+ 229 Geronimo Allison          WR  5 DET
+ 230 Demarcus Robinson         WR 12 KC
+ 231 Alex Erickson             WR  9 CIN
+ 232 Jalen Richard             RB -1 LV
+ 233 Bilal Powell              RB -1 -1
+ 234 Boston Scott              RB 10 PHI
+ 235 Dare Ogunbowale           RB  7 TB
+ 236 Eli Manning               QB -1 -1
+ 237 Trey Edmunds              RB  7 PIT
+ 238 Myles Gaskin              RB  5 MIA
+ 239 Joey Slye                 K   7 CAR
+ 240 Dion Lewis                RB 11 NYG
+ 241 Indianapolis              D   6 
+ 242 Kerryon Johnson           RB  5 DET
+ 243 Los Angeles               D  12 
+ 244 Justice Hill              RB  8 BAL
+ 245 Kansas City               D  12 
+ 246 Adam Humphries            WR 11 TEN
+ 247 Keke Coutee               WR 10 HOU
+ 248 Dwayne Haskins            QB 10 WAS
+ 249 Damien Harris             RB 10 NE
+ 250 J.J. Arcega-Whiteside     WR 10 PHI
+ 251 Devlin Hodges             QB  7 PIT
+ 252 Nick Foles                QB  6 CHI
+ 253 Cleveland                 D   7 
+ 254 Justin Jackson            RB 12 LAC
+ 255 Hunter Renfrow            WR -1 LV
+ 256 Ty Montgomery             RB  9 NO
+ 257 Younghoe Koo              K   9 ATL
+ 258 Darren Fells              TE 10 HOU
+ 259 Keelan Cole               WR 10 JAC
+ 260 Jimmy Graham              TE  6 CHI
+ 261 Zane Gonzalez             K  12 ARI
+ 262 Qadree Ollison            RB  9 ATL
+ 263 Dante Pettis              WR  4 SF
+ 264 Jonnu Smith               TE 11 TEN
+ 265 Kerrith Whyte Jr.         RB  7 PIT
+ 266 Andy Isabella             WR 12 ARI
+ 267 Wendell Smallwood         RB 10 WAS
+ 268 New York                  D   4 
+ 269 Washington                D  10 
+ 270 Houston                   D  10 
+ 271 David Blough              QB  5 DET
+ 272 Chris Boswell             K   7 PIT
+ 273 Dontrell Hilliard         RB  7 CLE
+ 274 Brett Maher               K   4 NYJ
+ 275 Mike Nugent               K  -1 -1
+ 276 Mike Davis                RB  7 CAR
+ 277 Kendrick Bourne           WR  4 SF
+ 278 Albert Wilson             WR  5 MIA
+ 279 Rashard Higgins           WR  7 CLE
+ 280 Ameer Abdullah            RB 12 MIN
+ 281 Olamide Zaccheaus         RB  9 ATL
+ 282 Greg Ward                 WR 10 PHI
+ 283 Tampa Bay                 D   7 
+ 284 Ashton Dulin              WR  6 IND
+ 285 New York                  D  11 
+ 286 Mike Boone                RB 12 MIN
+ 287 Marcus Johnson            WR  6 IND
+ 288 T.J. Yeldon               RB  6 BUF
+ 289 Justin Watson             WR  7 TB
+ 290 Isaiah Ford               WR  5 MIA
+ 291 David Moore               WR 11 SEA
+ 292 Kelvin Harmon             WR 10 WAS
+ 293 KeeSean Johnson           WR 12 ARI
+ 294 Dwayne Washington         RB  9 NO
+ 295 Austin Seibert            K   7 CLE
+ 296 Olabisi Johnson           WR 12 MIN
+ 297 Zay Jones                 WR -1 LV
+ 298 Dawson Knox               TE  6 BUF
+ 299 Marquise Goodwin          WR 10 PHI
+ 300 Ryan Finley               QB  9 CIN
+ 301 Matt Bryant               K  -1 -1
+ 302 Eddy Pineiro              K   6 CHI
+ 303 Willie Snead              WR  8 BAL
+ 304 Damarea Crockett          RB 11 GB
+ 305 DaeSean Hamilton          WR 10 DEN
+ 306 Nick O'Leary              TE -1 LV
+ 307 Dan Bailey                K  12 MIN
+ 308 Josh Rosen                QB  5 MIA
+ 309 D'Ernest Johnson          RB  7 CLE
+ 310 Brandon Allen             QB 10 DEN
+ 311 Donte Moncrief            WR -1 -1
+ 312 Antonio Brown             WR -1 -1
+ 313 Tyrod Taylor              QB 12 LAC
+ 314 Tyler Eifert              TE 10 JAC
+ 315 Taysom Hill               QB  9 NO
+ 316 Aldrick Rosas             K  11 NYG
+ 317 Devin Smith               WR  8 DAL
+ 318 Jake Kumerow              WR 11 GB
+ 319 Josh Lambo                K  10 JAC
+ 320 Jesse James               TE  5 DET
+ 321 Chase Daniel              QB  5 DET
+ 322 C.J. Uzomah               TE  9 CIN
+ 323 Dexter Williams           RB 11 GB
+ 324 Theo Riddick              RB -1 -1
+ 325 Miles Boykin              WR  8 BAL
+ 326 Devontae Booker           RB -1 LV
+ 327 Travis Benjamin           WR  4 SF
+ 328 Cameron Brate             TE  7 TB
+ 329 Robert Griffin            QB  8 BAL
+ 330 Irv Smith Jr.             TE 12 MIN
+ 331 Jaron Brown               WR -1 -1

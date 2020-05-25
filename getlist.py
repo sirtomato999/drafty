@@ -2,7 +2,7 @@
 #
 # getlist.py downloads and parses a list from https://www.fantasypros.com
 #
-print('Working...')
+print('working...')
 
 from bs4 import BeautifulSoup
 import requests
@@ -15,34 +15,41 @@ if "--ppr" in sys.argv:
 else:
     soup = BeautifulSoup(requests.get\
         ('https://www.fantasypros.com/nfl/rankings/ros-overall.php').text, 'lxml')
+
 table = soup.find_all('tbody')[0]
 rows = table.find_all('tr')
+
 list = []
 
 
 for row in rows:
-    if rows.index(row) == 50:
+    if rows.index(row) in [49, 75, 101, 202]:
         continue
+    
     row_data = row.find_all('td')
 
-    rank = int(str(row_data[0])[40:][:-5])
-    name = str(row.find_all('span')[0]) [24:] [:-7] #takes slice from first span object (name)
-    pos = str(row_data[3])[4:6]
+    print(f'\r{rows.index(row)+1}/399', end='')
+
+    rank = int(row_data[0].get_text())
+    name = row.find_all('span')[0].get_text() 
+    pos = row_data[3].get_text()
+    pos = ''.join([i for i in pos if not i.isdigit()])
 
     if pos.startswith('K'):
         pos = 'K'
-    elif pos == 'DS':
+    elif pos == 'DST':
         pos = 'D'
         name = name[:-5]
         
-    team = str(row.find_all('small')[0]).strip('</small>').lstrip('<small class="grey">')
+    team = row.find_all('small')[0].get_text()
 
     if "FA" in team:
         team = -1
     elif "a href" in team:
         team = -1
+
     try:
-        bye = int(str(row_data[4]).strip('</td>').lstrip('<td>'))
+        bye = int(row_data[4].get_text())
     except ValueError:
         bye = -1
 
@@ -60,7 +67,18 @@ for row in rows:
     player = [rank, name0, name1, name2, pos, bye, team]
     list.append(player)
 
+print()
+
+f = open('list.json', 'w')
+json_dump = json.dumps(list, sort_keys=True)
+f.write(json_dump)
+f.close()
+
 f = open('list', 'w')
-list = json.dumps(list, indent=2, sort_keys=True)
-f.write(list)
-print('List dumped to file "list" in the current directory')
+
+for p in list:
+    player = '{:4} {:25} {:2} {:2} {}'.format(p[0], f'{p[1]} {p[2]} {p[3]}', p[4], p[5], p[6])
+    f.write(f'{player}\n')
+    f.flush()
+
+print(' done!')
