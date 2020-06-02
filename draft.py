@@ -2,6 +2,7 @@
 import subprocess
 
 def display_teams(team, my_pick):
+    print('your pick is blue, current pick is yellow/bold\n')
     for t in range(teams):
         style = ''
         if t == team:
@@ -9,7 +10,7 @@ def display_teams(team, my_pick):
         if t == my_pick:
             style += "\033[34m"
 
-        print(f'{style}{t} \033[0m', end='')
+        print(f'{style}{t+1}\033[0m', end=' ')
     print()
 
 
@@ -18,7 +19,7 @@ if __name__ == '__main__':
     with open('list') as f:
         playerlist = f.readlines()
 
-    print(" == drafty fzf edition == ")
+    print("\033[2J\033[H\033[1;32m == drafty fzf edition == \033[0m")
     
     my_pick = int(input("what is your pick number? ")) - 1
     teams = int(input("how many teams are there? "))
@@ -51,8 +52,8 @@ if __name__ == '__main__':
         display_teams(last_teams[-1], my_pick)
         print()
 
-        print("\033[1m" + ('your' if my_pick == last_teams[-1] else 'their') + ' team\033[0m')
-        print(''.join(players[last_teams[-1]]))
+        print("\033[1m" + 'your team\033[0m')
+        print(''.join(players[my_pick]))
 
         input('press enter to select player')
 
